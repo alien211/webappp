@@ -13,7 +13,7 @@ function showPage(pageId) {
   hideAllPages();
   document.querySelector(`#${pageId}`).style.display = "block";
   setActiveTab(pageId);
-}
+} 
 
 // sets active tabbar/ menu item
 function setActiveTab(pageId) {
