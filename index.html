@@ -18,49 +18,50 @@
       <script src="js/main.js"></script>
     
       <!-- tabbar navigation -->
-  <nav class="tabbar">
-    <a href="#home"><img src="img/home_icon.png" class="tab_icon" alt="home icon"></a>
-    <div class="divider"></div>
-    <a href="#genres"><img src="img/list_icon.jpg" class="tab_icon" alt="list icon"></a>
-    <div class="divider"></div>
-    <a href="#music"><img src="img/music_icon.png" class="tab_icon" alt="music icon"></a>
-    <div class="divider"></div>
-    <a href="#artists"><img src="img/artists_icon.png" class="artists_icon" alt="artists icon"></a>
-  </nav>
-    
-    <!-- pages -->
+      <nav class="tabbar">
+        <a href="#home"><img src="img/home_icon.png" class="tab_icon" alt="home icon"></a>
+        <a href="#genres"><img src="img/category_icon.png" class="tab_icon" alt="category icon"></a>
+        <a href="#music"><img src="img/music_icon.png" class="tab_icon" alt="music icon"></a>
+        <a href="#artists"><img src="img/artists_icon.png" class="tab_icon" alt="artists icon"></a>
+      </nav>
 
-  <!-- home page -->
-  <section id="home" class="page">
-    <header class="topbar">
-      <h2>Home</h2>
-      <p>This is the home page</p>
-    </header>
-  </section>
+      <nav id="musicPlayer" class="musicplayer" onclick="openPlayer()">
+        <img id="downIcon" class="down_icon" onclick="closePlayer()" src="img/down_icon.png" alt="close music player">
+      </nav>
+        
+      <!-- pages -->
 
-<!-- genres page -->
-  <section id="genres" class="page">
-    <header class="topbar">
-      <h2>Genres page</h2>
-    </header>
-    <p>This is the genres page</p>
-  </section>
+      <!-- home page -->
+      <section id="home" class="page">
+        <header class="topbar">
+          <h2>Home</h2>
+          <p>This is the home page</p>
+        </header>
+      </section>
 
-  <!-- music page -->
-  <section id="music" class="page">
-    <header class="topbar">
-      <h2>Music page</h2>
-    </header>
-    <p>This is the music page</p>
-  </section>
+    <!-- genres page -->
+      <section id="genres" class="page">
+        <header class="topbar">
+          <h2>Genres page</h2>
+        </header>
+        <p>This is the genres page</p>
+      </section>
 
-  <!-- artists page -->
-  <section id="artists" class="page">
-    <header class="topbar">
-      <h2>Artists page</h2>
-    </header>
-    <p>This is the artitst page</p>
-  </section>
+      <!-- music page -->
+      <section id="music" class="page">
+        <header class="topbar">
+          <h2>Music page</h2>
+        </header>
+        <p>This is the music page</p>
+      </section>
+
+      <!-- artists page -->
+      <section id="artists" class="page">
+        <header class="topbar">
+          <h2>Artists page</h2>
+        </header>
+        <p>This is the artitst page</p>
+      </section>
     
     </body>
 

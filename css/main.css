@@ -1,4 +1,14 @@
 /* Basic CSS reset */
+
+/* Colour pallet:
+  #171C26 - cyan grey
+  #6C7689 - medium grey
+  #A4AAB7 - light grey
+  #FFFFFF - white
+
+  OUR BASE UNIT WILL BE 8px! (8px, 16px, 24px, 32px, 40px, 48px, 56px, 64px...)
+*/
+
 *,
 :after,
 :before {
@@ -9,11 +19,12 @@
 }
 
 .page_body {
-    font-family: Arial, Helvetica, sans-serif;
-    max-width: 500px;
+    font-family: Arial, Helvetica, sans-serif;  
     height: 100%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid #171C26;
+    overflow-x: hidden;
+    overflow-y: hidden;
     /* background-color: #FAFAFA; */
 }
 
@@ -21,57 +32,61 @@
 
 .tabbar {
     background-color: white;
-    border: 1px solid #171C26;
-    border-radius: 30px;
+    border-radius: 40px;
     position: fixed;
-    bottom: 0;
+    bottom: -80px;
+    left: 0;
     margin: 0 auto;
     z-index: 9999;
     width: 100%;
-    max-width: 500px;
+    height: 160px;
+    text-align: center;
   }
 
 /* Style the links inside the navigation bar */
 
-.tab_icon {
-    width: 30px;
-    text-align: center;
-    align-items: center;
-    margin-left: 21px;
-}
-
-.artists_icon {
-    width: 30px;
-    text-align: center;
-    align-items: center;
-    margin-left: 21px;
-}
-
-.divider{
-    width: 40px;
-    height: auto;
-    display: inline-block;
-}
-
 .tabbar a {
-    display: inline-block;
-    color: var(--text-color-light);
-    text-align: center;
-    padding: 20px 16px;
-    text-decoration: none;
-    font-size: 0.8em;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
+  display: inline-block;
+  color: var(--text-color-light);
+  padding: 24px 24px;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+}
+
+.tab_icon {
+    width: 40px;
+    color: #171C26;
+}
+
+.musicplayer {
+  background-color: #171C26;
+  border-radius: 40px;
+  position: fixed;
+  bottom: -160px;
+  left: 0;
+  margin: 0 auto;
+  z-index: 9998;
+  width: 100%;
+  height: 320px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.down_icon {
+  width: 40px;
+  display: none;
+}
+
   
-  /* Change the color of links on hover */
-  .tabbar a:hover {
-    background-color: var(--light-grey);
-    color: var(--text-color-dark);
-  }
+/* Change the color of links on hover */
+.tabbar a:hover {
+  background-color: var(--light-grey);
+  color: var(--text-color-dark);
+}
   
   /* Add a color to the active/current link */
-  .tabbar a.active {
-    background-color: var(--light-green);
-    color: var(--green);
-  }
+.tabbar a.active {
+  background-color: var(--light-green);
+  color: var(--green);
+}
