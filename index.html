@@ -19,14 +19,16 @@
     
       <!-- tabbar navigation -->
       <nav class="tabbar">
-        <a href="#home"><img src="img/home_icon.png" class="tab_icon" alt="home icon"></a>
-        <a href="#genres"><img src="img/category_icon.png" class="tab_icon" alt="category icon"></a>
-        <a href="#music"><img src="img/music_icon.png" class="tab_icon" alt="music icon"></a>
-        <a href="#artists"><img src="img/artists_icon.png" class="tab_icon" alt="artists icon"></a>
+        <a href="#home"><img src="img/home_icon.png" class="tab_icon" id="home_icon" alt="home icon"></a>
+        <a href="#genres"><img src="img/category_icon.png" class="tab_icon" id="genres_icon" alt="category icon"></a>
+        <a href="#music"><img src="img/music_icon.png" class="tab_icon" id="music_icon" alt="music icon"></a>
+        <a href="#artists"><img src="img/artists_icon.png" class="tab_icon" id="artists_icon" alt="artists icon"></a>
       </nav>
 
+      <!-- music player -->
       <nav id="musicPlayer" class="musicplayer" onclick="openPlayer()">
-        <img id="downIcon" class="down_icon" onclick="closePlayer()" src="img/down_icon.png" alt="close music player">
+        <img id="downIcon" class="down_icon" onclick="closePlayer()" src="img/down_icon.png" alt="close music player"><br>
+        <img id="imgIcon" src="img/img_icon.png" alt="image symbol">
       </nav>
         
       <!-- pages -->
@@ -34,15 +36,21 @@
       <!-- home page -->
       <section id="home" class="page">
         <header class="topbar">
-          <h2>Home</h2>
-          <p>This is the home page</p>
+          <h2>Explore</h2>
+          <a href="#favourites"><div class="fav_button">
+            <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
+          </div></a>
         </header>
+        <p>This is the home page</p>
       </section>
 
     <!-- genres page -->
       <section id="genres" class="page">
         <header class="topbar">
           <h2>Genres page</h2>
+          <a href="#favourites"><div class="fav_button">
+            <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
+          </div></a>
         </header>
         <p>This is the genres page</p>
       </section>
@@ -51,6 +59,9 @@
       <section id="music" class="page">
         <header class="topbar">
           <h2>Music page</h2>
+          <a href="#favourites"><div class="fav_button">
+            <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
+          </div></a>
         </header>
         <p>This is the music page</p>
       </section>
@@ -59,10 +70,20 @@
       <section id="artists" class="page">
         <header class="topbar">
           <h2>Artists page</h2>
+          <a href="#favourites"><div class="fav_button">
+            <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
+          </div></a>
         </header>
         <p>This is the artitst page</p>
       </section>
-    
+
+      <!-- favourites page -->
+      <section id="favourites" class="page">
+        <header class="topbar">
+          <h2>Favourites page</h2>
+        </header>
+        <p>This is the artitst page</p>
+      </section>
     </body>
 
 </html>

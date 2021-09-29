@@ -28,6 +28,30 @@
     /* background-color: #FAFAFA; */
 }
 
+.page {
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.topbar {
+  margin-top: 8px;
+}
+
+.topbar h2 {
+  display: inline;
+}
+
+.fav_button {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  border-radius: 50%;
+  background-color: #171C26;
+  float: right;
+}
+
+
+
 /* ---------- tabbar styling ---------- */
 
 .tabbar {
@@ -59,6 +83,14 @@
     color: #171C26;
 }
 
+#home_icon {
+  padding: 3px;
+}
+
+#music_icon {
+  padding: 4px;
+}
+
 .musicplayer {
   background-color: #171C26;
   border-radius: 40px;
@@ -67,15 +99,22 @@
   left: 0;
   margin: 0 auto;
   z-index: 9998;
-  width: 100%;
+  width: 84%;
   height: 320px;
   text-align: center;
   cursor: pointer;
+  margin-left: 8%;
 }
 
 .down_icon {
   width: 40px;
   display: none;
+}
+
+#imgIcon {
+  width: 40px;
+  float: left;
+  margin-left: 4%;
 }
 
   
@@ -89,4 +128,16 @@
 .tabbar a.active {
   background-color: var(--light-green);
   color: var(--green);
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .musicplayer {
+    width:100%;
+    margin:0;
+  }
 }

@@ -4,6 +4,7 @@ function openPlayer() {
     document.getElementById("musicPlayer").style.bottom="0px";
     document.getElementById("musicPlayer").style.cursor="default";
     document.getElementById("downIcon").style.display="inline-block";
+    document.getElementById("imgIcon").style.width="160px";
 }
 
 /*document.getElementById("downIcon").onclick = function() {closePlayer()}*/
