@@ -24,7 +24,9 @@
     margin: 0 auto;
     overflow-x: hidden;
     overflow-y: hidden;
-    /* background-color: #FAFAFA; */
+    background-image: linear-gradient(white, lightgrey);
+    margin-top: 16px;
+    overflow-y:scroll;
 }
 
 .topbar {
@@ -41,9 +43,8 @@
   margin-right: 8%;
 }
 
-.page_body {
-  overflow-y:scroll;
-  margin-top: 16px;
+.page-content {
+  padding: 8px;
 }
 
 .fav_button {
