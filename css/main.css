@@ -92,3 +92,75 @@
   background-color: var(--light-green);
   color: var(--green);
 }
+
+/* ---------- grid container styling ---------- */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1em;
+  gap: 1em;
+}
+
+@media (min-width: 480px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.grid-container > article {
+  text-align: center;
+  padding: 2em 1em;
+  background-color: var(--white);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.grid-container > article:hover {
+  box-shadow: 0 8px 16px 0 var(--green-opacity);
+}
+
+.grid-container > article img {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  border: 1px solid #171C26;
+  border-radius: 50px;
+}
+
+.grid-container > article h4 {
+  width: 100%;
+  max-width: 100px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 10px;
+  color: #171C26;
+}
+
+.grid-container .empty {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+}
+
+/* ---------- Artists page styling ---------- */
+
+.artists_header {
+  color: #171C26;
+  padding-left: 30px;
+  padding-top: 30px;
+  font-size: 30px;
+}
+
+.line1 {
+  width: 200px;
+  border: 1px solid #DFDFDF;
+  margin-top: 8px;
+  margin-left: 30px;
+  display: block;
+}
