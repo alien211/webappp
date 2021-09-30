@@ -22,10 +22,18 @@
     font-family: Arial, Helvetica, sans-serif;  
     height: 100%;
     margin: 0 auto;
-    border: 1px solid #171C26;
     overflow-x: hidden;
     overflow-y: hidden;
     /* background-color: #FAFAFA; */
+}
+
+.topbar {
+  padding: 8px;
+}
+
+.topbar h2 {
+  display: inline;
+  padding-top: 8px;
 }
 
 .page {
@@ -33,12 +41,9 @@
   margin-right: 8%;
 }
 
-.topbar {
-  margin-top: 8px;
-}
-
-.topbar h2 {
-  display: inline;
+.page_body {
+  overflow-y:scroll;
+  margin-top: 16px;
 }
 
 .fav_button {
@@ -48,6 +53,8 @@
   border-radius: 50%;
   background-color: #171C26;
   float: right;
+  position: relative;
+  top: -6px;
 }
 
 
