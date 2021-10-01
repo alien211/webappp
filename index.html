@@ -8,6 +8,7 @@
         <meta name="description" content="This is a web application that we created for our school project.">
         <meta name="author" content="Marcell Ilyes, Nikola Prolic">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
 
     <body class="page_body" onhashchange="pageChange()">
@@ -19,10 +20,10 @@
     
       <!-- tabbar navigation -->
       <nav class="tabbar">
-        <a href="#home"><img src="img/home_icon.png" class="tab_icon" id="home_icon" alt="home icon"></a>
-        <a href="#genres"><img src="img/category_icon.png" class="tab_icon" id="genres_icon" alt="category icon"></a>
-        <a href="#music"><img src="img/music_icon.png" class="tab_icon" id="music_icon" alt="music icon"></a>
-        <a href="#artists"><img src="img/artists_icon.png" class="tab_icon" id="artists_icon" alt="artists icon"></a>
+        <a href="#home"><span class="material-icons md-40 tab_icon" id="home_icon">home</span></a>
+        <a href="#genres"><span class="material-icons md-40 tab_icon" id="genres_icon">list</span></a>
+        <a href="#music"><span class="material-icons md-40 tab_icon" id="music_icon">headset</span></a>
+        <a href="#artists"><span class="material-icons md-40 tab_icon" id="artists_icon">person</span></a>
       </nav>
 
       <!-- music player -->
@@ -36,38 +37,45 @@
       <!-- home page -->
       <section id="home" class="page">
         <header class="topbar">
-          <h2>Explore</h2>
+          <div class="heading"><h2>Explore</h2></div>
           <a href="#favourites"><div class="fav_button">
             <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
           </div></a>
         </header>
         <section class="page-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sapien non diam dictum placerat. Sed ut felis tincidunt, finibus purus eu, vulputate leo. Mauris mattis in tellus vitae pharetra. Etiam et imperdiet mi. Curabitur dapibus, dolor sit amet accumsan pharetra, dolor lacus tristique lectus, eu scelerisque lorem eros non nisi. Duis mollis nulla neque, ut feugiat purus feugiat a. Nam eget mollis mauris, eu iaculis tortor. Nullam nulla est, tempor at metus eu, eleifend posuere elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam elementum tincidunt dolor nec maximus. Curabitur vitae erat id orci ornare rhoncus. Donec condimentum diam vitae ligula mollis, ut vehicula erat aliquam. Aenean urna enim, egestas non consectetur ac, ornare ac nisl. Proin commodo dignissim ipsum, ut faucibus eros. Aenean ullamcorper quis risus eget vehicula. Aenean eu ultricies erat.
+          <div class="video-card">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GuAtcpFQpMw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
 
-            Morbi euismod ipsum dolor, id molestie elit egestas sit amet. Etiam iaculis risus at sagittis accumsan. Phasellus dignissim ut massa eu commodo. Nulla facilisi. In hac habitasse platea dictumst. Aliquam vel ornare metus. Curabitur non mauris dui.
-            
-            Nunc luctus arcu eget massa molestie, ac luctus quam fermentum. Sed vitae pharetra diam, blandit dictum dolor. Sed faucibus turpis non dolor venenatis, eget venenatis arcu vulputate. Praesent quam lacus, mattis quis orci nec, feugiat laoreet libero. Morbi bibendum, erat a ultrices lobortis, ante purus euismod purus, quis bibendum lorem dui et purus. Aliquam mollis risus ipsum, sed volutpat tellus varius in. Duis ut arcu purus. Morbi eu fermentum mi. Nam rhoncus viverra ante, sed porttitor urna volutpat eu. Donec cursus leo eu magna fermentum dapibus. Quisque quis nisi dolor. Donec sit amet orci eget justo laoreet aliquam. In quis purus et nibh egestas dignissim. Curabitur ligula eros, malesuada sed eros quis, dignissim mollis quam. Praesent faucibus, odio eu egestas mollis, tortor massa iaculis ex, in tincidunt velit dolor in erat.
-            
-            Donec mollis ac eros quis ornare. Sed cursus dignissim mauris, vel semper nunc semper quis. Nulla laoreet sollicitudin quam, quis faucibus velit ornare sed. Integer erat neque, finibus non nunc eget, bibendum aliquet libero. In ut mauris lacus. Aliquam erat volutpat. In congue dignissim finibus. In hac habitasse platea dictumst. Suspendisse potenti.
-            
-            Morbi et convallis purus. Etiam et risus felis. Ut maximus, turpis eget fermentum pharetra, velit sapien ultrices tellus, nec varius nisl neque et elit. Nulla et tortor et neque eleifend euismod a at elit. Duis quam nisl, volutpat scelerisque sapien vitae, ultrices dignissim velit. Nulla sagittis congue ante eget vehicula. Sed in risus pellentesque, finibus leo in, hendrerit lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sapien non diam dictum placerat. Sed ut felis tincidunt, finibus purus eu, vulputate leo. Mauris mattis in tellus vitae pharetra. Etiam et imperdiet mi. Curabitur dapibus, dolor sit amet accumsan pharetra, dolor lacus tristique lectus, eu scelerisque lorem eros non nisi. Duis mollis nulla neque, ut feugiat purus feugiat a. Nam eget mollis mauris, eu iaculis tortor. Nullam nulla est, tempor at metus eu, eleifend posuere elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam elementum tincidunt dolor nec maximus. Curabitur vitae erat id orci ornare rhoncus. Donec condimentum diam vitae ligula mollis, ut vehicula erat aliquam. Aenean urna enim, egestas non consectetur ac, ornare ac nisl. Proin commodo dignissim ipsum, ut faucibus eros. Aenean ullamcorper quis risus eget vehicula. Aenean eu ultricies erat.
+          <div class="tinder-btn-container">
+            <div class="yes-no-btn"><span class="material-icons md-40" style="color: #171C26;">clear</span></div>
+            <span class="material-icons info-btn">info</span>
+            <div class="yes-no-btn"><span class="material-icons md-40" style="color: #171C26;">favorite</span></div>
+          </div>
 
-              Morbi euismod ipsum dolor, id molestie elit egestas sit amet. Etiam iaculis risus at sagittis accumsan. Phasellus dignissim ut massa eu commodo. Nulla facilisi. In hac habitasse platea dictumst. Aliquam vel ornare metus. Curabitur non mauris dui.
-              
-              Nunc luctus arcu eget massa molestie, ac luctus quam fermentum. Sed vitae pharetra diam, blandit dictum dolor. Sed faucibus turpis non dolor venenatis, eget venenatis arcu vulputate. Praesent quam lacus, mattis quis orci nec, feugiat laoreet libero. Morbi bibendum, erat a ultrices lobortis, ante purus euismod purus, quis bibendum lorem dui et purus. Aliquam mollis risus ipsum, sed volutpat tellus varius in. Duis ut arcu purus. Morbi eu fermentum mi. Nam rhoncus viverra ante, sed porttitor urna volutpat eu. Donec cursus leo eu magna fermentum dapibus. Quisque quis nisi dolor. Donec sit amet orci eget justo laoreet aliquam. In quis purus et nibh egestas dignissim. Curabitur ligula eros, malesuada sed eros quis, dignissim mollis quam. Praesent faucibus, odio eu egestas mollis, tortor massa iaculis ex, in tincidunt velit dolor in erat.
-              
-              Donec mollis ac eros quis ornare. Sed cursus dignissim mauris, vel semper nunc semper quis. Nulla laoreet sollicitudin quam, quis faucibus velit ornare sed. Integer erat neque, finibus non nunc eget, bibendum aliquet libero. In ut mauris lacus. Aliquam erat volutpat. In congue dignissim finibus. In hac habitasse platea dictumst. Suspendisse potenti.
-              
-              Morbi et convallis purus. Etiam et risus felis. Ut maximus, turpis eget fermentum pharetra, velit sapien ultrices tellus, nec varius nisl neque et elit. Nulla et tortor et neque eleifend euismod a at elit. Duis quam nisl, volutpat scelerisque sapien vitae, ultrices dignissim velit. Nulla sagittis congue ante eget vehicula. Sed in risus pellentesque, finibus leo in, hendrerit lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-              <br><br><br><br><br><br><br><br><br><br> 
+          <div class="line"></div>
+
+          <div class="help-box">
+            <h3>Help</h3><br>
+            <p>Discover new music and genres.<br><br>
+              If you like the song, press the heart symbol or swipe right.<br><br>
+              If you dislike the song, press the 'X' symbol or swipe left.<br><br>
+              If you wish to know which genre and subgenre does the song belong to, press the info icon 'i'.
+            </p>
+          </div>
+          
+          <div class="popup-info">
+            <section>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sapien non diam dictum placerat. Sed ut felis tincidunt, finibus purus eu, vulputate leo. Mauris mattis in tellus vitae pharetra. Etiam et imperdiet mi. Curabitur dapibus, dolor sit amet accumsan pharetra, dolor lacus tristique lectus, eu scelerisque lorem eros non nisi. Duis mollis nulla neque, ut feugiat purus feugiat a. Nam eget mollis mauris, eu iaculis tortor. Nullam nulla est, tempor at metus eu, eleifend posuere elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam elementum tincidunt dolor nec maximus. Curabitur vitae erat id orci ornare rhoncus. Donec condimentum diam vitae ligula mollis, ut vehicula erat aliquam. Aenean urna enim, egestas non consectetur ac, ornare ac nisl. Proin commodo dignissim ipsum, ut faucibus eros. Aenean ullamcorper quis risus eget vehicula. Aenean eu ultricies erat. Morbi euismod ipsum dolor, id molestie elit egestas sit amet. Etiam iaculis risus at sagittis accumsan. Phasellus dignissim ut massa eu commodo. Nulla facilisi. In hac habitasse platea dictumst. Aliquam vel ornare metus. Curabitur non mauris dui. Nunc luctus arcu eget massa molestie, ac luctus quam fermentum. Sed vitae pharetra diam, blandit dictum dolor. Sed faucibus turpis non dolor venenatis, eget venenatis arcu vulputate. Praesent quam lacus, mattis quis orci nec, feugiat laoreet libero. Morbi bibendum, erat a ultrices lobortis, ante purus euismod purus, quis bibendum lorem dui et purus. Aliquam mollis risus ipsum, sed volutpat tellus varius in. Duis ut arcu purus. Morbi eu
+            </section>
+          </div>
         </section>
       </section>
 
     <!-- genres page -->
       <section id="genres" class="page">
         <header class="topbar">
-          <h2>Genres page</h2>
+          <div class="heading"><h2>Genres page</h2></div>
           <a href="#favourites"><div class="fav_button">
             <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
           </div></a>
@@ -98,7 +106,7 @@
       <!-- music page -->
       <section id="music" class="page">
         <header class="topbar">
-          <h2>Music page</h2>
+          <div class="heading"><h2>Music page</h2></div>
           <a href="#favourites"><div class="fav_button">
             <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
           </div></a>
@@ -162,7 +170,7 @@
       <!-- favourites page -->
       <section id="favourites" class="page">
         <header class="topbar">
-          <h2>Favourites page</h2>
+          <div class="heading"><h2>Favourites page</h2></div>
         </header>
         <section class="page-content">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sapien non diam dictum placerat. Sed ut felis tincidunt, finibus purus eu, vulputate leo. Mauris mattis in tellus vitae pharetra. Etiam et imperdiet mi. Curabitur dapibus, dolor sit amet accumsan pharetra, dolor lacus tristique lectus, eu scelerisque lorem eros non nisi. Duis mollis nulla neque, ut feugiat purus feugiat a. Nam eget mollis mauris, eu iaculis tortor. Nullam nulla est, tempor at metus eu, eleifend posuere elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam elementum tincidunt dolor nec maximus. Curabitur vitae erat id orci ornare rhoncus. Donec condimentum diam vitae ligula mollis, ut vehicula erat aliquam. Aenean urna enim, egestas non consectetur ac, ornare ac nisl. Proin commodo dignissim ipsum, ut faucibus eros. Aenean ullamcorper quis risus eget vehicula. Aenean eu ultricies erat.
