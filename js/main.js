@@ -1,5 +1,8 @@
 "use strict";
 
+/* ------- Music player ------- */
+
+/* Opens music player and enlarges the image */
 function openPlayer() {
     document.getElementById("musicPlayer").style.bottom="0px";
     document.getElementById("musicPlayer").style.cursor="default";
@@ -7,13 +10,21 @@ function openPlayer() {
     document.getElementById("imgIcon").style.width="160px";
 }
 
-/*document.getElementById("downIcon").onclick = function() {closePlayer()}*/
-
-function closePlayer() {
-    alert("Hello");
+/*function closePlayer() {
     document.getElementById("musicPlayer").style.bottom="-160px";
+    document.getElementById("musicPlayer").style.cursor="pointer";
     document.getElementById("downIcon").style.display="none";
-}
+    document.getElementById("imgIcon").style.width="40px";
+}*/
+
+
+
+/* -------- Popup information --------- */
+
+/*function openPopup() {
+    document.getElementById("popupInfo").style.display="block";
+}*/
+
 
 /* ------- Artists page ------- */
 

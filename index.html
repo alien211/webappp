@@ -9,6 +9,7 @@
         <meta name="author" content="Marcell Ilyes, Nikola Prolic">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://kit.fontawesome.com/c96fa40f77.js" crossorigin="anonymous"></script>
     </head>
 
     <body class="page_body" onhashchange="pageChange()">
@@ -28,7 +29,7 @@
 
       <!-- music player -->
       <nav id="musicPlayer" class="musicplayer" onclick="openPlayer()">
-        <img id="downIcon" class="down_icon" onclick="closePlayer()" src="img/down_icon.png" alt="close music player"><br>
+        <i id="downIcon" class="fas fa-chevron-down fa-2x down-icon" onclick="closePlayer()"></i><br>
         <img id="imgIcon" src="img/img_icon.png" alt="image symbol">
       </nav>
         
@@ -49,7 +50,7 @@
 
           <div class="tinder-btn-container">
             <div class="yes-no-btn"><span class="material-icons md-40" style="color: #171C26;">clear</span></div>
-            <span class="material-icons info-btn">info</span>
+            <button onclick="openPopup" style="display: inline-block;"><span class="material-icons info-btn" >info</span></button>
             <div class="yes-no-btn"><span class="material-icons md-40" style="color: #171C26;">favorite</span></div>
           </div>
 
@@ -64,7 +65,7 @@
             </p>
           </div>
           
-          <div class="popup-info">
+          <div id="popupInfo" class="popup-info">
             <section>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sapien non diam dictum placerat. Sed ut felis tincidunt, finibus purus eu, vulputate leo. Mauris mattis in tellus vitae pharetra. Etiam et imperdiet mi. Curabitur dapibus, dolor sit amet accumsan pharetra, dolor lacus tristique lectus, eu scelerisque lorem eros non nisi. Duis mollis nulla neque, ut feugiat purus feugiat a. Nam eget mollis mauris, eu iaculis tortor. Nullam nulla est, tempor at metus eu, eleifend posuere elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam elementum tincidunt dolor nec maximus. Curabitur vitae erat id orci ornare rhoncus. Donec condimentum diam vitae ligula mollis, ut vehicula erat aliquam. Aenean urna enim, egestas non consectetur ac, ornare ac nisl. Proin commodo dignissim ipsum, ut faucibus eros. Aenean ullamcorper quis risus eget vehicula. Aenean eu ultricies erat. Morbi euismod ipsum dolor, id molestie elit egestas sit amet. Etiam iaculis risus at sagittis accumsan. Phasellus dignissim ut massa eu commodo. Nulla facilisi. In hac habitasse platea dictumst. Aliquam vel ornare metus. Curabitur non mauris dui. Nunc luctus arcu eget massa molestie, ac luctus quam fermentum. Sed vitae pharetra diam, blandit dictum dolor. Sed faucibus turpis non dolor venenatis, eget venenatis arcu vulputate. Praesent quam lacus, mattis quis orci nec, feugiat laoreet libero. Morbi bibendum, erat a ultrices lobortis, ante purus euismod purus, quis bibendum lorem dui et purus. Aliquam mollis risus ipsum, sed volutpat tellus varius in. Duis ut arcu purus. Morbi eu
             </section>

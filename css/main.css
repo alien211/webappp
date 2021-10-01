@@ -190,8 +190,11 @@
   margin-left: 8%;
 }
 
-.down_icon {
-  width: 40px;
+.down-icon {
+  color: #6C7689;
+}
+
+#downIcon {
   display: none;
 }
 
