@@ -138,11 +138,27 @@
       <!-- artists page -->
       <section id="artists" class="page">
         <header class="topbar">
-          <div class="heading"><h2>Artists page</h2></div>
-          <a href="#favourites"><div class="fav_button">
-            <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
-          </div></a>
+          <h2 class="artists_header">Artists</h2>
+          <hr class="line1">
+        <!--  <a href="#favourites"><div class="fav_button">
+          <img src="img/fav_icon_white.png" alt="favourites button" style="height:32px;">
+          </div></a> -->
         </header>
+
+        <section class="tools-grid">
+          <label for="sortBy">Order by: <br>
+            <select id="sortBy" onchange="orderBy(this.value)">
+            <option value="" selected disabled>Choose here</option>
+            <option value="name">Name</option>
+          </select>
+          </label>
+
+          <label for="sortBy">Genres: <br>
+            <select id="sortByGenre" onchange="orderBy(this.value)">
+            <option selected disabled>Choose here</option>
+          </select>
+          </label>
+        </section>
 
         <section id="gridArtists" class="grid-container"></section>
         

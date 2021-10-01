@@ -204,6 +204,9 @@
   margin-left: 4%;
 }
 
+.fav_button {
+  margin-right: 50px;
+}
   
 /* Change the color of links on hover */
 .tabbar a:hover {
@@ -317,4 +320,33 @@
   padding-left: 30px;
   padding-top: 30px;
   font-size: 30px;
+}
+
+.line1 {
+  width: 200px;
+  border: 1px solid #DFDFDF;
+  margin-top: 8px;
+  margin-left: 30px;
+  display: block;
+}
+
+/* ---------- tools grid styling ---------- */
+
+.tools-grid {
+  background-color: #6C7689;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 1em;
+  gap: 1em;
+  justify-items: center;
+}
+
+@media (min-width: 480px) {
+  .tools-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.tools-grid label{
+  max-width: 350px;
 }
