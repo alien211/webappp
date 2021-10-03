@@ -10,12 +10,12 @@ function openPlayer() {
     document.getElementById("imgIcon").style.width="160px";
 }
 
-/*function closePlayer() {
+function closePlayer() {
     document.getElementById("musicPlayer").style.bottom="-160px";
     document.getElementById("musicPlayer").style.cursor="pointer";
     document.getElementById("downIcon").style.display="none";
     document.getElementById("imgIcon").style.width="40px";
-}*/
+}
 
 
 

@@ -128,7 +128,7 @@
   width: 83%;
   background-image: linear-gradient(#171C26, #6C7689);
   padding: 16px 32px;
-  z-index: 10000;
+  z-index: 10001;
 }
 
 
@@ -175,7 +175,7 @@
   color: #6C7689;
 }
 
-.musicplayer {
+.musicplayer1 {
   background-color: #171C26;
   border-radius: 40px;
   position: fixed;
@@ -186,16 +186,29 @@
   width: 84%;
   height: 320px;
   text-align: center;
-  cursor: pointer;
+  margin-left: 8%;
+  padding-top: 1em;
+}
+
+.musicplayer2 {
+  background-color: transparent;
+  border-radius: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 9998;
+  width: 84%;
+  height: 320px;
+  text-align: center;
   margin-left: 8%;
 }
 
 .down-icon {
   color: #6C7689;
-}
-
-#downIcon {
   display: none;
+  z-index: 9999;
+  position: absolute;
 }
 
 #imgIcon {
@@ -226,7 +239,7 @@
     margin-right: 0;
   }
 
-  .musicplayer {
+  .musicplayer1 {
     width:100%;
     margin:0;
   }
