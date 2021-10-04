@@ -49,7 +49,7 @@ function appendArtists(artists) {
     let htmlTemplate = "";
     for (let artist of artists) {
         htmlTemplate += /*html*/`
-        <article>
+        <article onclick="showDetailedPage(${artist.id})">
         <img src="${artist.img_url}">
         <h4>${artist.name}</h4>
         <p>Genre: ${artist.genre}</p>
@@ -143,3 +143,17 @@ function appendArtistsByGenre(artistsByGenre) {
     }
     document.querySelector('#artists-by-genre-container').innerHTML = htmlTemplate;
 }  */
+
+/* ------- Detailed artist page ------- */
+
+function showDetailedPage(id) {
+    const artistToShow = _artists.find(artist => artist.id === id);
+    navigateTo("detailed-page");
+    document.querySelector("#detailed-page-container").innerHTML = /*html*/`
+        <img src ="${artistToShow.img_url}">
+        <article>
+        <h2>${artistToShow.name}</h2>
+        <h3>${artistToShow.genre}</h3>
+        <h3>${artistToShow.country}</h3>
+    `;
+}
