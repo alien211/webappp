@@ -50,12 +50,11 @@ async function fetchData() {
     _artists = data;
     console.log(_artists);
     appendArtists(_artists);
-    showLoader(false);
 }
 
 fetchData();
 
-//append artists
+//append artists to the DOM
 
 function appendArtists(artists) {
     let htmlTemplate = "";
@@ -98,7 +97,7 @@ function orderByGenre() {
     appendArtists(_artists);
 }
 
-/* ask Rasmus why this doesn't work
+// ask Rasmus why this doesn't work
 
 // fetch all genres from JSON
 
@@ -116,7 +115,7 @@ getGenres();
 function appendGenres(genres) {
     let htmlTemplate = "";
     for (let genre of genres) {
-        htmlTemplate += /*html*/      /*`
+        htmlTemplate += /*html*/      `
         <option value="${genre.id}">${genre.genre}</option>
     `;
     }
@@ -138,7 +137,7 @@ async function genreSelected(genreId) {
 function appendArtistsByGenre(artistsByGenre) {
     let htmlTemplate = "";
     for (let artist of artistsByGenre) {
-        htmlTemplate += /*html*/       /*`
+        htmlTemplate += /*html*/       `
         <article>
         <img src="${artist.img_url}">
         <h4>${artist.name}</h4>
@@ -149,12 +148,12 @@ function appendArtistsByGenre(artistsByGenre) {
     }
     // if no movies, display feedback to the user
     if (artistsByGenre.length === 0) {
-        htmlTemplate = /*html*/      /*`
+        htmlTemplate = /*html*/      `
         <p>No artists</p>
     `;
     }
     document.querySelector('#artists-by-genre-container').innerHTML = htmlTemplate;
-}  */
+} 
 
 /* ------- Detailed artist page ------- */
 
@@ -162,10 +161,11 @@ function showDetailedPage(id) {
     const artistToShow = _artists.find(artist => artist.id === id);
     navigateTo("detailed-page");
     document.querySelector("#detailed-page-container").innerHTML = /*html*/`
-        <img src ="${artistToShow.img_url}">
         <article>
+        <img src ="${artistToShow.img_url}">
         <h2>${artistToShow.name}</h2>
         <h3>${artistToShow.genre}</h3>
-        <h3>${artistToShow.country}</h3>
+        <h4>${artistToShow.country}</h4>
+        </article>
     `;
 }

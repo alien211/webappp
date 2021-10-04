@@ -310,7 +310,7 @@
 .grid-container > article {
   text-align: center;
   padding: 2em 1em;
-  background-color: var(--white);
+  background-color: white;
   transition: 0.3s;
   cursor: pointer;
 }
@@ -377,4 +377,63 @@
 
 .tools-grid label{
   max-width: 350px;
+}
+
+/* ---------- Detailed artist page styling ---------- */
+
+.artist-container> article img {
+    width: 100%;
+    opacity: 70%;
+    top: 0;
+    margin: 0 auto;
+}
+
+.artist-container> article h2 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: -170px;
+  font-size: 40px;
+  color: #171C26;
+}
+
+.artist-container> article h3 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: -170px;
+  font-size: 20px;
+  color: #171C26;
+}
+
+.artist-container> article h4 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: -170px;
+  font-size: 15px;
+  color: #171C26;
+}
+
+.artist-header {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  color: #171C26;
+}
+
+.line2 {
+  width: 80%;
+  border: 1px solid white;
+  margin-left: 20px;
+  display: block;
+}
+
+.artist-biography {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  color: #171C26;
 }
