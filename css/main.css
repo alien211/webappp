@@ -205,6 +205,13 @@
   padding-top: 1em;
 }
 
+.musicplayer1 iframe {
+  position: absolute;
+  bottom: 0;
+  left: 80px;
+  z-index: 9999;
+}
+
 .musicplayer2 {
   background-color: transparent;
   border-radius: 40px;
@@ -224,6 +231,13 @@
   display: none;
   z-index: 9999;
   position: absolute;
+}
+
+.playpause {
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  z-index: 9999;
 }
 
 #imgIcon {
@@ -277,6 +291,10 @@
 
   .fav_button {
     margin-right: 0;
+  }
+
+  .playpause {
+    right: 0;
   }
 }
 

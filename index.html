@@ -30,8 +30,13 @@
       <!-- music player -->
       <nav id="musicPlayer2" class="musicplayer2">
         <i id="downIcon" class="fas fa-chevron-down fa-2x down-icon" onclick="closePlayer()"></i>
+        <div class="playpause">
+          <i class="fas fa-play" style="font-size: 32px; color: #FFFFFF;"></i>
+          <i class="fas fa-pause" style="font-size: 32px; color: #FFFFFF;"></i>
+        </div>
         <div id="musicPlayer" class="musicplayer1" onclick="openPlayer()">
-          <img id="imgIcon" src="img/img_icon.png" alt="image symbol">
+          <img id="imgIcon" src="img/img_icon.png" alt="image symbol">  
+          <iframe src="https://open.spotify.com/embed/track/0rxN1O9XnyLVPYixqLrMWP?theme=0" width="30%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
         </div>
       </nav>
         
@@ -73,7 +78,6 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a sapien non diam dictum placerat. Sed ut felis tincidunt, finibus purus eu, vulputate leo. Mauris mattis in tellus vitae pharetra. Etiam et imperdiet mi. Curabitur dapibus, dolor sit amet accumsan pharetra, dolor lacus tristique lectus, eu scelerisque lorem eros non nisi. Duis mollis nulla neque, ut feugiat purus feugiat a. Nam eget mollis mauris, eu iaculis tortor. Nullam nulla est, tempor at metus eu, eleifend posuere elit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam elementum tincidunt dolor nec maximus. Curabitur vitae erat id orci ornare rhoncus. Donec condimentum diam vitae ligula mollis, ut vehicula erat aliquam. Aenean urna enim, egestas non consectetur ac, ornare ac nisl. Proin commodo dignissim ipsum, ut faucibus eros. Aenean ullamcorper quis risus eget vehicula. Aenean eu ultricies erat. Morbi euismod ipsum dolor, id molestie elit egestas sit amet. Etiam iaculis risus at sagittis accumsan. Phasellus dignissim ut massa eu commodo. Nulla facilisi. In hac habitasse platea dictumst. Aliquam vel ornare metus. Curabitur non mauris dui. Nunc luctus arcu eget massa molestie, ac luctus quam fermentum. Sed vitae pharetra diam, blandit dictum dolor. Sed faucibus turpis non dolor venenatis, eget venenatis arcu vulputate. Praesent quam lacus, mattis quis orci nec, feugiat laoreet libero. Morbi bibendum, erat a ultrices lobortis, ante purus euismod purus, quis bibendum lorem dui et purus. Aliquam mollis risus ipsum, sed volutpat tellus varius in. Duis ut arcu purus. Morbi eu
             </section>
           </div>
-          
         </section>
       </section>
 
@@ -139,7 +143,7 @@
         </section>
       </section>
 
-      <!-- artists list page -->
+      <!-- artists page -->
       <section id="artists" class="page">
         <header class="topbar">
           <h2 class="artists_header">Artists</h2>
@@ -175,8 +179,6 @@
       <!-- detailed artist page -->
 
       <section id="detailed-page" class="page">
-        <header class="topbar">
-        </header>
         <section id="detailed-page-container" class="artist-container"></section>
         <h2 class="artist-header">Top songs from Viper Diva</h2>
         <hr class="line2">
@@ -199,8 +201,11 @@
         <hr class="line2">
 
       </section>
+        <section id="detailed-page-container">
 
-      <br><br><br><br><br><br><br><br><br><br> 
+          <br><br><br><br><br><br><br><br><br><br>
+        </section>
+      </section>
 
       <!-- favourites page -->
       <section id="favourites" class="page">
