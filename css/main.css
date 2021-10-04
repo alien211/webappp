@@ -71,7 +71,7 @@
 }
 
 .video-card {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 32px; 
   background-color: #171C26;
   border: 1px solid #6C7689;
