@@ -5,15 +5,19 @@
 /* Opens music player and enlarges the image */
 function openPlayer() {
     document.getElementById("musicPlayer").style.bottom="0px";
+    document.getElementById("musicPlayer2").style.bottom="0px";
     document.getElementById("musicPlayer").style.cursor="default";
     document.getElementById("downIcon").style.display="inline-block";
+    document.getElementById("downIcon").style.color="#6C7689";
     document.getElementById("imgIcon").style.width="160px";
 }
 
 function closePlayer() {
     document.getElementById("musicPlayer").style.bottom="-160px";
+    document.getElementById("musicPlayer2").style.bottom="-160px";
     document.getElementById("musicPlayer").style.cursor="pointer";
     document.getElementById("downIcon").style.display="none";
+    document.getElementById("downIcon").style.color="transparent";
     document.getElementById("imgIcon").style.width="40px";
 }
 
@@ -21,9 +25,17 @@ function closePlayer() {
 
 /* -------- Popup information --------- */
 
-/*function openPopup() {
-    document.getElementById("popupInfo").style.display="block";
-}*/
+document.getElementById("info").onclick = function openPopup() {
+    if (document.getElementById("popupInfo").style.display != "none")
+    {
+        document.getElementById("popupInfo").style.display = "none";
+        document.getElementById("triangle").style.display = "none";
+    }
+    else {
+        document.getElementById("popupInfo").style.display = "block";
+        document.getElementById("triangle").style.display = "block";
+    }
+}
 
 
 /* ------- Artists page ------- */
