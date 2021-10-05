@@ -75,7 +75,7 @@ async function fetchData2() {
 
 fetchData2();
 
-//append artists to the DOM
+//append tracks to the DOM
 
 function appendTracks(tracks) {
     let htmlTemplate = "";
