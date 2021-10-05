@@ -333,15 +333,9 @@
 }
   
   /* Add a color to the active/current link */
-.tabbar a.active {
+.tabbar .active .tab_icon {
   color: #171C26;
 }
-
-.tabbar span.active {
-  color: #171C26;
-  background-color: #171C26;
-}
-
 
 /* ---------- grid container styling ---------- */
 
@@ -386,7 +380,7 @@
 
 .grid-container > article h4 {
   width: 100%;
-  max-width: 100px;
+  max-width: 150px;
   margin: 0 auto;
   text-align: center;
   padding: 10px 10px;
