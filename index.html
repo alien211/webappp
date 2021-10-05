@@ -128,7 +128,7 @@
         </nav>
 
         <section id="Tracks" class="page-content tab-content">
-          
+
           <section id="gridTracks" class="grid-container"></section>
       
           <br><br><br><br><br><br><br><br><br><br> 
@@ -169,14 +169,21 @@
         </header>
 
         <section class="tools-grid">
-          <label for="sortBy">Order by: <br>
-            <select id="sortBy" onchange="orderBy(this.value)">
+          <label for="sortBy"><b>Order by:</b> <br>
+            <select id="sortBy" class="tools-grid-container" onchange="orderBy(this.value)">
             <option value="" selected disabled>Choose here</option>
             <option value="name">Name</option>
           </select>
           </label>
-          <label for="sortBy">Genres: <br>
-            <select id="sortByGenre" onchange="orderBy(this.value)">
+
+          <label for="sortBy"><b>Genres:</b> <br>
+            <select id="sortByGenre" class="tools-grid-container" onchange="filterByGenre(this.value)">
+            <option selected disabled>Choose here</option>
+          </select>
+          </label>
+
+          <label for="sortBy"><b>Country:</b> <br>
+            <select id="sortByCountry" class="tools-grid-container" onchange="filterByCountry(this.value)">
             <option selected disabled>Choose here</option>
           </select>
           </label>

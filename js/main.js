@@ -97,6 +97,8 @@ function appendTracks(tracks) {
 /* ------- ARTISTS page ------- */
 
 let _artists = [];
+let _genres = [];
+let _country = [];
 
 // fetch data from the artists json file
 
@@ -106,6 +108,20 @@ async function fetchData() {
     _artists = data;
     console.log(_artists);
     appendArtists(_artists);
+
+    const genres = _artists.map(artist => artist.genre);
+    console.log(genres);
+
+    _genres = [...new Set(genres)]
+    console.log(_genres);
+    appendGenres(_genres);
+
+    const country = _artists.map(artist => artist.country);
+    console.log(country);
+
+    _country = [...new Set(country)]
+    console.log(_country);
+    appendCountry(_country);
 }
 
 fetchData();
@@ -155,37 +171,40 @@ function orderByGenre() {
 
 // ask Rasmus why this doesn't work
 
-// fetch all genres from JSON
-
-async function getGenres() {
-    let response = await fetch("json/artists.json");
-    let data = await response.json();
-    console.log(data);
-    appendGenres(data);
-}
-
-getGenres();
-
-// append all genres as select options (dropdown)
+// append all genres and countries as select options (dropdown)
 
 function appendGenres(genres) {
     let htmlTemplate = "";
     for (let genre of genres) {
-        htmlTemplate += /*html*/      `
-        <option value="${genre.id}">${genre.genre}</option>
+        htmlTemplate += /*html*/`
+        <option value="${genre}">${genre}</option>
     `;
     }
     document.querySelector('#sortByGenre').innerHTML += htmlTemplate;
 }
 
-// fetch artists by selected genre
-
-async function genreSelected(genreId) {
-    if (genreId) {
-        let response = await fetch("json/artists.json")
-        let data = await response.json();
-        appendArtistsByGenre(data);
+function appendCountry(countries) {
+    let htmlTemplate = "";
+    for (let country of countries) {
+        htmlTemplate += /*html*/`
+        <option value="${country}">${country}</option>
+    `;
     }
+    document.querySelector('#sortByCountry').innerHTML += htmlTemplate;
+}
+
+// filter artists by selected genre
+
+function filterByGenre(genre) {
+    const results = _artists.filter(artist => artist.genre === genre);
+    appendArtists(results);
+}
+
+// filter artists by selected country
+
+function filterByCountry(country) {
+    const results = _artists.filter(artist => artist.country === country);
+    appendArtists(results);
 }
 
 // append artists by genre
@@ -202,7 +221,7 @@ function appendArtistsByGenre(artistsByGenre) {
         </article>
     `;
     }
-    // if no movies, display feedback to the user
+    // if no genres, display feedback to the user
     if (artistsByGenre.length === 0) {
         htmlTemplate = /*html*/      `
         <p>No artists</p>
