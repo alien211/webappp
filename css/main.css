@@ -44,8 +44,11 @@
 
 .heading {
   display: inline-block;
-  border-bottom: 1px solid #DFDFDF;
+  border-bottom: 1px solid #171C26;
   padding-bottom: 11.8px;
+  margin-left: 30px;
+  margin-top: 4px;
+  font-size: 20px;
 }
 
 .topbar h2 {
@@ -384,11 +387,10 @@
 /* ---------- tools grid styling ---------- */
 
 .tools-grid {
-  height: 56px;
-  background-color: #6C7689;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 8px 1em;
+  padding: 24px 1em;
   gap: 1em;
   justify-items: center;
   margin-top: 15px;
@@ -510,15 +512,12 @@
   }
 
   .fav_button {
-    margin-right: 0;
+    margin-right: 8px;
+    margin-top: 3px;
   }
 
   .playpause {
     right: 0;
-  }
-
-  .tools-grid {
-    height: 128px;
   }
 }
 
