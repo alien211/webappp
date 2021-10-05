@@ -90,7 +90,7 @@ async function fetchData2() {
 
     _types = [...new Set(types)]
     console.log(_types);
-    appendTypes(_types);
+    appendGenres2(_types);
 }
 
 fetchData2();
@@ -101,7 +101,7 @@ function appendTracks(tracks) {
     let htmlTemplate = "";
     for (let track of tracks) {
         htmlTemplate += /*html*/`
-        <article onclick="showDetailedPage(${track.id})">
+        <article onclick="showSong(${track.id})">
         <img src="${track.img_url}">
         <span id="heart" class="material-icons md-40 heart" style="color: white; margin-left: -60px; top: -195px;">favorite</span>
         <h4>${track.title}</h4>
@@ -173,7 +173,7 @@ function appendGenres2(genres) {
 
 // filter tracks by selected BPM
 
-function filterByBPM(BPM) {
+function orderByBPM(BPM) {
     const results = _tracks.filter(track => track.BPM === BPM);
     appendTracks(results);
 }
@@ -189,7 +189,7 @@ function filterByGenre2(genre) {
 
 function appendTracksByGenre(tracksByGenre) {
     let htmlTemplate = "";
-    for (let artist of tracksByGenre) {
+    for (let track of tracksByGenre) {
         htmlTemplate += /*html*/       `
         <article>
         <img src="${track.img_url}">
@@ -206,6 +206,19 @@ function appendTracksByGenre(tracksByGenre) {
     `;
     }
     document.querySelector('#tracks-by-genre-container').innerHTML = htmlTemplate;
+}
+
+function showSong(id) {
+    const trackToPlay = _tracks.find(track => track.id === id);
+    document.querySelector("#musicPlayer").innerHTML = /*html*/`
+        <img id="imgIcon" src ="${trackToPlay.img_url}">
+        <article style="color: white; margin-top: 64px;">
+            <h2>${trackToPlay.title}</h2>
+            <h3>${trackToPlay.artist}</h3>
+            <p>${trackToPlay.genre} - ${trackToPlay.subgenre}<br>
+            ${trackToPlay.BPM} BPM</p>
+        </article>
+    `;
 }
 
 
