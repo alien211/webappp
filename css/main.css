@@ -25,18 +25,24 @@
     overflow-x: hidden;
     overflow-y: hidden;
     background-image: linear-gradient(white, lightgrey);
-    margin-top: 16px;
     overflow-y:scroll;
 }
 
 .topbar {
+  height: 60px;
   padding: 8px;
+  /* margin-top: 16px; */
+  background-color: #171C26;
 }
 
 .heading {
   display: inline-block;
-  border-bottom: 1px solid #DFDFDF;
+  margin-left: 30px;
+  margin-top: 4px;
+  font-size: 20px;
+  /* border-bottom: 1px solid #DFDFDF; */
   padding-bottom: 8px;
+  color: white;
 }
 
 .topbar h2 {
@@ -334,7 +340,7 @@
 }
 
 .grid-container > article:hover {
-  box-shadow: 0 8px 16px 0 var(--green-opacity);
+  box-shadow: 0 8px 16px 0 #6C7689;
 }
 
 .grid-container > article img {
@@ -352,6 +358,12 @@
   text-align: center;
   padding: 10px 10px;
   color: #171C26;
+  text-transform: uppercase;
+}
+
+.grid-container > article p {
+  padding-bottom: 5px;
+  font-size: 14px;
 }
 
 .grid-container .empty {
@@ -379,12 +391,19 @@
 /* ---------- tools grid styling ---------- */
 
 .tools-grid {
-  background-color: #6C7689;
+  background-color: white;
   display: grid;
   grid-template-columns: 1fr;
   padding: 0 1em;
   gap: 1em;
   justify-items: center;
+  margin-top: 15px;
+}
+
+.tools-grid-container {
+  border: 2px solid #A4AAB7;
+  margin-top: 5px;
+  height: 30px;
 }
 
 @media (min-width: 480px) {
