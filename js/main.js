@@ -1,28 +1,5 @@
 "use strict";
 
-/* ------- Music player ------- */
-
-/* Opens music player and enlarges the image */
-function openPlayer() {
-    document.getElementById("musicPlayer").style.bottom="0px";
-    document.getElementById("musicPlayer2").style.bottom="0px";
-    document.getElementById("musicPlayer").style.cursor="default";
-    document.getElementById("downIcon").style.display="inline-block";
-    document.getElementById("downIcon").style.color="#6C7689";
-    document.getElementById("imgIcon").style.width="160px";
-}
-
-function closePlayer() {
-    document.getElementById("musicPlayer").style.bottom="-160px";
-    document.getElementById("musicPlayer2").style.bottom="-160px";
-    document.getElementById("musicPlayer").style.cursor="pointer";
-    document.getElementById("downIcon").style.display="none";
-    document.getElementById("downIcon").style.color="transparent";
-    document.getElementById("imgIcon").style.width="40px";
-}
-
-
-
 /* -------- Popup information --------- */
 
 document.getElementById("info").onclick = function openPopup() {
@@ -212,13 +189,40 @@ function showSong(id) {
     const trackToPlay = _tracks.find(track => track.id === id);
     document.querySelector("#musicPlayer").innerHTML = /*html*/`
         <img id="imgIcon" src ="${trackToPlay.img_url}">
-        <article style="color: white; margin-top: 64px;">
+        <div id="smallTxt" style="color: white; margin-top: 4px; margin-left: 16px; float: left; "><h3 style="display:inline; float: left;">${trackToPlay.title}</h3> <br> <h5 style="display:inline; float: left;">${trackToPlay.artist}</h5></div>
+        
+        <article id="bigTxt" style="color: white; margin-top: 64px; display: absolute; right: 0;">
             <h2>${trackToPlay.title}</h2>
             <h3>${trackToPlay.artist}</h3>
             <p>${trackToPlay.genre} - ${trackToPlay.subgenre}<br>
             ${trackToPlay.BPM} BPM</p>
         </article>
     `;
+}
+
+/* ------- Music player ------- */
+
+/* Opens music player and enlarges the image */
+function openPlayer() {
+    document.getElementById("musicPlayer").style.bottom="0px";
+    document.getElementById("musicPlayer2").style.bottom="0px";
+    document.getElementById("musicPlayer").style.cursor="default";
+    document.getElementById("downIcon").style.display="inline-block";
+    document.getElementById("downIcon").style.color="#6C7689";
+    document.getElementById("imgIcon").style.width="160px";
+    document.getElementById("smallTxt").style.display="none";
+    document.getElementById("bigTxt").style.display="block";
+}
+
+function closePlayer() {
+    document.getElementById("musicPlayer").style.bottom="-160px";
+    document.getElementById("musicPlayer2").style.bottom="-160px";
+    document.getElementById("musicPlayer").style.cursor="pointer";
+    document.getElementById("downIcon").style.display="none";
+    document.getElementById("downIcon").style.color="transparent";
+    document.getElementById("imgIcon").style.width="40px";
+    document.getElementById("smallTxt").style.display="block";
+    document.getElementById("bigTxt").style.display="none";
 }
 
 

@@ -31,9 +31,9 @@
       <nav id="musicPlayer2" class="musicplayer2">
         <i id="downIcon" class="fas fa-chevron-down fa-2x down-icon" onclick="closePlayer()"></i>
         <div class="playpause">
-          <span id="heart" class="material-icons md-34 heart" style="color: white;">favorite</span>
+          <span id="heart" class="material-icons md-34 heart" style="color: white; position: absolute; bottom: 8px; right: 40px;">favorite</span>
           <i class="fas fa-play" style="font-size: 32px; color: #FFFFFF;"></i>
-          <i class="fas fa-pause" style="font-size: 32px; color: #FFFFFF;"></i>
+          <i class="fas fa-pause" style="font-size: 32px; color: #FFFFFF; display: none;"></i>
         </div>
         <div id="musicPlayer" class="musicplayer1" onclick="openPlayer()">
           <img id="imgIcon" src="img/img_icon.png" alt="image symbol">  
@@ -107,7 +107,7 @@
                 </div>
               </div><br>
             <section>
-              <h3>Discover tracks of subgenre</h3><br>
+              <h3>Discover tracks of the subgenre</h3><br>
               <iframe src="https://open.spotify.com/embed/playlist/3W6mZXaET0EmLWk9sMnyqD" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </section>
             <br><br><br><br><br><br><br><br><br><br>
@@ -143,7 +143,7 @@
           <button class="tablink" onclick="openTab(event, 'Livesets')"><h4>Livesets</h4></button>
         </nav>
 
-        <section id="Tracks" class=" tab-content">
+        <section id="Tracks" class="tab-content tab1">
 
           <section class="tools-grid">
             <label for="sortBy2"><b>Order by:</b> <br>

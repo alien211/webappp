@@ -325,6 +325,7 @@
   top: 1.5em;
   right: 1em;
   z-index: 9999;
+  background-color: #171C26;
 }
 
 #imgIcon {
@@ -427,6 +428,14 @@
 .tab-menu button:active {
   color: white;
   text-decoration: underline;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab1 {
+  display: block;
 }
 
 .heart {
