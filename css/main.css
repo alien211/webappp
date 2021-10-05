@@ -30,13 +30,23 @@
 }
 
 .topbar {
+  position: absolute;
+  width: 84%;
+  top: 0;
+  margin: 0;
   padding: 8px;
+  padding-top: 16px;
+}
+
+.black-mode {
+  background-color: #171C26;
+  color: white;
 }
 
 .heading {
   display: inline-block;
   border-bottom: 1px solid #DFDFDF;
-  padding-bottom: 8px;
+  padding-bottom: 11.8px;
 }
 
 .topbar h2 {
@@ -48,6 +58,7 @@
 .page {
   margin-left: 8%;
   margin-right: 8%;
+  margin-top: 64px;
 }
 
 .page-content {
@@ -62,12 +73,13 @@
   background-color: #171C26;
   float: right;
   position: relative;
-  top: -6px;
+  top: -3px;
   margin-right: 40px;
 }
 
-#home {
-  height: 100em; /* TEMPORARY */
+.white-btn {
+  color: #171C26;
+  border: 1px solid white;
 }
 
 .video-card {
@@ -126,6 +138,7 @@
   position: absolute;
   margin: 0 auto;
   top: 480px;
+  left: 49.5%;
   width: 0;
   height: 0;  
   border-left: 8px solid transparent;
@@ -142,6 +155,7 @@
   display: none;
   width: 83%;
   background-image: linear-gradient(#171C26, #6C7689);
+  color: white;
   padding: 16px 32px;
   z-index: 10001;
 }
@@ -176,6 +190,12 @@
   font-size: 40px !important;
   height: 40px !important;
   width: 40px !important;
+}
+
+.material-icons.md-32 {
+  font-size: 32px !important;
+  height: 32px !important;
+  width: 32px !important;
 }
 
 #home_icon {
@@ -258,51 +278,6 @@
   color: var(--green);
 }
 
-@media screen and (max-width: 1000px) {
-  .page {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .musicplayer1 {
-    width:100%;
-    margin:0;
-  }
-
-  .video-card iframe {
-    width: 100%;
-    height: auto;
-  }
-
-  .line {
-    width: 75%;
-  }
-
-  .popup-info {
-    width: 100%;
-    left: 0;
-    top: 53%;
-  }
-
-  .help-box {
-    width: 80%;
-    padding: 32px 16px;
-  }
-
-  .fav_button {
-    margin-right: 0;
-  }
-
-  .playpause {
-    right: 0;
-  }
-}
-
-@media screen and (max-height: 599px) {
-  .popup-info {
-    top: 60%;
-  }
-}
 
 /* ---------- grid container styling ---------- */
 
@@ -359,6 +334,31 @@
   grid-row: 3;
 }
 
+/* ---------- Music page styling ---------- */
+
+.tab-menu {
+  background-color: #171C26;
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-menu button {
+  background-color: inherit;
+  color: #6C7689;
+  cursor: pointer;
+  width: 50%;
+  padding: 8px 0;
+}
+
+.tab-menu button:hover {
+  color: white;
+}
+
+.tab-menu button:active {
+  color: white;
+  text-decoration: underline;
+}
+
 /* ---------- Artists page styling ---------- */
 
 .artists_header {
@@ -379,10 +379,11 @@
 /* ---------- tools grid styling ---------- */
 
 .tools-grid {
+  height: 56px;
   background-color: #6C7689;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 1em;
+  padding: 8px 1em;
   gap: 1em;
   justify-items: center;
 }
@@ -454,4 +455,105 @@
   margin-bottom: 20px;
   width: 80%;
   color: #171C26;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .topbar {
+    width: 100%;
+  }
+
+  .musicplayer1 {
+    width:100%;
+    margin:0;
+  }
+
+  .video-card iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .line {
+    width: 75%;
+  }
+
+  .triangle {
+    top: 49%;
+    left: 48%
+  }
+
+  .popup-info {
+    width: 100%;
+    left: 0;
+    top: 53%;
+  }
+
+  .help-box {
+    width: 80%;
+    padding: 32px 16px;
+  }
+
+  .fav_button {
+    margin-right: 0;
+  }
+
+  .playpause {
+    right: 0;
+  }
+
+  .tools-grid {
+    height: 128px;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .triangle {
+    top: 38%;
+  }
+
+  .popup-info {
+    top: 41.5%;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .triangle {
+    top: 50%;
+  }
+
+  .popup-info {
+    top: 55%;
+  }
+}
+
+@media screen and (max-height: 599px) {
+  .triangle {
+    top: 54.5%;
+  }
+
+  .popup-info {
+    top: 60%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .triangle {
+    top: 45%;
+  }
+  .popup-info {
+    top: 49%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .triangle {
+    top: 480px;
+  }
+  .popup-info {
+    top: 512px;
+  }
 }

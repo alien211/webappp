@@ -37,8 +37,64 @@ document.getElementById("info").onclick = function openPopup() {
     }
 }
 
+/* -------- Music page -------- */
 
-/* ------- Artists page ------- */
+function openTab(evt,tabName) {
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tab-content" and hide them
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablink" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+/* ------- MUSIC page ------- */
+
+let _tracks = [];
+
+// fetch data from the artists json file
+
+async function fetchData2() {
+    const response = await fetch('json/music.json');
+    const data = await response.json();
+    _tracks = data;
+    console.log(_tracks);
+    appendTracks(_tracks);
+}
+
+fetchData2();
+
+//append artists to the DOM
+
+function appendTracks(tracks) {
+    let htmlTemplate = "";
+    for (let track of tracks) {
+        htmlTemplate += /*html*/`
+        <article onclick="showDetailedPage(${track.id})">
+        <img src="${track.img_url}">
+        <h4>${track.title}</h4>
+        <h5>${track.artist}</h5>
+        <p>Genre: ${track.genre}</p>
+        <p>BPM: ${artist.BPM}</p>
+        </article>
+    `;
+    }
+    document.querySelector('#gridTracks').innerHTML = htmlTemplate;
+}
+
+
+/* ------- ARTISTS page ------- */
 
 let _artists = [];
 
