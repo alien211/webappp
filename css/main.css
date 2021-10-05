@@ -210,7 +210,7 @@
 }
 
 .artist-card-img img {
-  border: 1px soild #171C26;
+  border: 1px solid #171C26;
   border-radius: 50%;
   height: 128px;
   width: 128px;
@@ -328,15 +328,18 @@
 }
   
 /* Change the color of links on hover */
-.tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
+.tabbar span:hover {
+  color: #171C26;
 }
   
   /* Add a color to the active/current link */
 .tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--green);
+  color: #171C26;
+}
+
+.tabbar span.active {
+  color: #171C26;
+  background-color: #171C26;
 }
 
 
@@ -446,22 +449,24 @@
 /* ---------- tools grid styling ---------- */
 
 .tools-grid {
-  background-color: white;
+  background-color: #A4AAB7;
   display: grid;
   grid-template-columns: 1fr;
   padding: 24px 1em;
   gap: 1em;
-  justify-items: center;
+  justify-items: left;
+  padding-left: 37%;
+  padding-right: 40%;
   margin-top: 15px;
 }
 
 .tools-grid-container {
-  border: 2px solid #A4AAB7;
+  border: 2px solid #6C7689;
   margin-top: 5px;
   height: 30px;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 420px) {
   .tools-grid{
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -523,6 +528,7 @@
   width: 80%;
   border: 1px solid white;
   margin-left: 20px;
+  margin-bottom: 10px;
   display: block;
 }
 
