@@ -86,7 +86,7 @@ function appendTracks(tracks) {
         <h4>${track.title}</h4>
         <h5>${track.artist}</h5>
         <p>Genre: ${track.genre}</p>
-        <p>BPM: ${artist.BPM}</p>
+        <p>BPM: ${track.BPM}</p>
         </article>
     `;
     }
