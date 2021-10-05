@@ -430,6 +430,10 @@
 
 /* ---------- Detailed artist page styling ---------- */
 
+.detailed-page {
+  margin-top: 0;
+}
+
 .artist-container > article img {
     width: 100%;
     opacity: 70%;
