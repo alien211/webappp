@@ -62,6 +62,8 @@ function openTab(evt,tabName) {
 /* ------- MUSIC page ------- */
 
 let _tracks = [];
+let _BPMs = [];
+let _types = [];
 
 // fetch data from the artists json file
 
@@ -71,6 +73,24 @@ async function fetchData2() {
     _tracks = data;
     console.log(_tracks);
     appendTracks(_tracks);
+
+    // for BPM
+
+    const BPMs = _tracks.map(track => track.BPM);
+    console.log(BPMs);
+
+    _types = [...new Set(BPMs)]
+    console.log(_BPMs);
+    appendBPMs(_BPMs);
+
+    // type/types = genre/genres here
+
+    const types = _tracks.map(track => track.genre);
+    console.log(types);
+
+    _types = [...new Set(types)]
+    console.log(_types);
+    appendTypes(_types);
 }
 
 fetchData2();
@@ -83,6 +103,7 @@ function appendTracks(tracks) {
         htmlTemplate += /*html*/`
         <article onclick="showDetailedPage(${track.id})">
         <img src="${track.img_url}">
+        <span id="heart" class="material-icons md-40 heart" style="color: white; margin-left: -60px; top: -195px;">favorite</span>
         <h4>${track.title}</h4>
         <h5>${track.artist}</h5>
         <p>Genre: ${track.genre}</p>
@@ -91,6 +112,100 @@ function appendTracks(tracks) {
     `;
     }
     document.querySelector('#gridTracks').innerHTML = htmlTemplate;
+}
+
+/*document.getElementsByClass("heart").onclick = function Like() {
+    if (document.getElementById("heart").style.color != "red") {
+        document.getElementById("heart").style.color = "red";
+    }
+    else {
+        document.getElementById("heart").style.color = "white";
+    }
+}*/
+
+// sorting functions
+
+function orderBy2(option) {
+    if (option === "title") {
+      orderByTitle();
+    } else if (option === "BPM") {
+      orderByBPM();
+    } else if (option === "genre") {
+      orderByGenre();
+    }
+  }
+
+function orderByTitle() {
+    _tracks.sort((title1, title2) => {
+        return title1.title.localeCompare(title2.title);
+    });
+    appendTracks(_tracks);
+}
+
+function orderByBPM() {
+    _tracks.sort((track1, track2) => {
+        return track1.BPM.localeCompare(track2.title);
+    });
+    appendTracks(_tracks);
+}
+
+// append all BPMs and genres as select options (dropdown)
+
+function appendBPMs(BPMs) {
+    let htmlTemplate = "";
+    for (let BPM of BPMs) {
+        htmlTemplate += /*html*/`
+        <option value="${BPM}">${BPM}</option>
+    `;
+    }
+    document.querySelector('#sortByBPM').innerHTML += htmlTemplate;
+}
+
+function appendGenres2(genres) {
+    let htmlTemplate = "";
+    for (let genre of genres) {
+        htmlTemplate += /*html*/`
+        <option value="${genre}">${genre}</option>
+    `;
+    }
+    document.querySelector('#sortByGenre2').innerHTML += htmlTemplate;
+}
+
+// filter tracks by selected BPM
+
+function filterByBPM(BPM) {
+    const results = _tracks.filter(track => track.BPM === BPM);
+    appendTracks(results);
+}
+
+// filter tracks by selected genre
+
+function filterByGenre2(genre) {
+    const results = _tracks.filter(track => track.genre === genre);
+    appendTracks(results);
+}
+
+// append tracks by genre
+
+function appendTracksByGenre(tracksByGenre) {
+    let htmlTemplate = "";
+    for (let artist of tracksByGenre) {
+        htmlTemplate += /*html*/       `
+        <article>
+        <img src="${track.img_url}">
+        <h4>${track.title}</h4>
+        <p>Genre: ${track.genre}</p>
+        <p>BPM: ${track.BPM}</p>
+        </article>
+    `;
+    }
+    // if no genres, display feedback to the user
+    if (tracksByGenre.length === 0) {
+        htmlTemplate = /*html*/      `
+        <p>No tracks</p>
+    `;
+    }
+    document.querySelector('#tracks-by-genre-container').innerHTML = htmlTemplate;
 }
 
 
@@ -228,7 +343,10 @@ function appendArtistsByGenre(artistsByGenre) {
     `;
     }
     document.querySelector('#artists-by-genre-container').innerHTML = htmlTemplate;
-} 
+}
+
+
+
 
 /* ------- Detailed artist page ------- */
 

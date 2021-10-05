@@ -159,7 +159,7 @@
   width: 83%;
   background-image: linear-gradient(#171C26, #6C7689);
   color: white;
-  z-index: 10001;
+  z-index: 9999;
 }
 
 .h2 {
@@ -423,6 +423,11 @@
   text-decoration: underline;
 }
 
+.heart {
+  position: relative;
+  top: 0;
+}
+
 /* ---------- Artists page styling ---------- */
 
 .artists_header {
@@ -451,7 +456,6 @@
   justify-items: left;
   padding-left: 37%;
   padding-right: 40%;
-  margin-top: 15px;
 }
 
 .tools-grid-container {
