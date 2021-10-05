@@ -8,7 +8,15 @@
         "BPM": 128,
         "img_url": "https://i.pinimg.com/564x/2e/70/da/2e70da922036dcbbf5d6f83878aea9e2.jpg",
         "spotify_api": "https://open.spotify.com/embed/track/2bDe4PKld6qpRUZS9Gki14"
-    }, {
-        
+    }, 
+    {
+        "id": 1,
+        "title": "",
+        "artist": "",
+        "genre": "",
+        "subgenre": "",
+        "BPM": ,
+        "img_url": "",
+        "spotify_api": ""
     }
 ]
