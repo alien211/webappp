@@ -21,25 +21,55 @@
 .page_body {
     font-family: Arial, Helvetica, sans-serif;  
     height: 100%;
-    max-width: 480px;
     margin: 0 auto;
-    border: 1px solid #171C26;
     overflow-x: hidden;
     overflow-y: hidden;
-    /* background-color: #FAFAFA; */
+    background-image: linear-gradient(white, lightgrey);
+    overflow-y:scroll;
+    top: 0;
+}
+
+.topbar {
+  position: absolute;
+  width: 84%;
+  top: 0;
+  margin: 0;
+  padding: 8px;
+  padding-top: 16px;
+}
+
+.black-mode {
+  background-color: #171C26;
+  color: white;
+}
+
+.heading {
+  display: inline-block;
+  border-bottom: 1px solid #171C26;
+  padding-bottom: 11.8px;
+  margin-left: 30px;
+  margin-top: 4px;
+  font-size: 20px;
+}
+
+.topbar h2 {
+  display: inline;
+  padding-top: 8px;
+  padding-right: 32px;
 }
 
 .page {
   margin-left: 8%;
   margin-right: 8%;
+  margin-top: 64px;
 }
 
-.topbar {
-  margin-top: 8px;
+.page-content {
+  padding: 8px;
 }
 
-.topbar h2 {
-  display: inline;
+.page-content2 {
+  padding: 0;
 }
 
 .fav_button {
@@ -49,22 +79,164 @@
   border-radius: 50%;
   background-color: #171C26;
   float: right;
+  position: relative;
+  top: -3px;
+  margin-right: 40px;
 }
 
+.white-btn {
+  color: #171C26;
+  border: 1px solid white;
+}
 
+.video-card {
+  margin: 0 auto;
+  margin-top: 32px; 
+  background-color: #171C26;
+  border: 1px solid #6C7689;
+  border-radius: 3%;
+  padding: 8px;
+  width: fit-content;
+}
+
+.tinder-btn-container {
+  margin-top: 16px;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.yes-no-btn {
+  background-color: white;
+  border: 1px solid #171C26;
+  border-radius: 50%;
+  display: inline-block;
+  height: 64px;
+  width: 64px;
+  padding: 10px;
+}
+
+.info-btn {
+  color: #171C26;
+  display: inline-block;
+  width: fit-content;
+  margin: 0 16px;
+  cursor: pointer;
+}
+
+.line {
+  width: 50%;
+  margin: auto;
+  border: 1px solid #6C7689;
+  margin-top: 128px;
+}
+
+.help-box  {
+  margin: auto;
+  margin-top: 64px;
+  padding: 64px 16px;
+  width: 35%;
+  background-color: #6C7689;
+  border-radius: 5%;
+}
+
+.triangle {
+  position: absolute;
+  margin: 0 auto;
+  top: 480px;
+  left: 49.5%;
+  width: 0;
+  height: 0;  
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 32px solid #171C26;
+  display: none;
+  z-index: 10001;
+}
+
+.popup-info {
+  position: absolute;
+  margin: auto;
+  top: 512px;
+  display: none;
+  width: 83%;
+  background-image: linear-gradient(#171C26, #6C7689);
+  color: white;
+  z-index: 9997;
+}
+
+.h2 {
+  padding: 16px 32px;
+  padding-bottom: 0;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  background-color: #272d3a;
+}
+
+.h2 h2 {
+  display: inline;
+  text-decoration: underline;
+}
+
+.popup-line {
+  display: inline-block;
+  position: relative;
+  margin-top: 8px;
+  left: -32px;
+  width: 75%;
+  border: 4px solid white;
+}
+
+.corner {
+  display: inline-block;
+  border: 4px solid white;
+  border-radius: 50%;
+  position: relative;
+  left: -36px;
+}
+
+.popup-info img {
+  width: 100%;
+}
+
+.popup-info section {
+  padding: 16px 32px;
+}
+
+.carousel {
+  width: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+
+.artist-card-img img {
+  border: 1px solid #171C26;
+  border-radius: 50%;
+  height: 128px;
+  width: 128px;
+}
+
+.artist-card {
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 8px;
+}
 
 /* ---------- tabbar styling ---------- */
 
 .tabbar {
     background-color: white;
-    border: 1px solid #171C26;
     border-radius: 40px;
     position: fixed;
     bottom: -80px;
+    left: 0;
     margin: 0 auto;
     z-index: 9999;
     width: 100%;
-    max-width: 480px;
     height: 160px;
     text-align: center;
   }
@@ -74,44 +246,91 @@
 .tabbar a {
   display: inline-block;
   color: var(--text-color-light);
-  padding: 24px 24px;
+  margin: 16px 24px;
   text-decoration: none;
-  font-size: 0.8em;
-  letter-spacing: 0.1em;
+  font-size: 48px;
 }
 
-.tab_icon {
-    width: 40px;
-    color: #171C26;
+.material-icons.md-40 {
+  font-size: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+}
+
+.material-icons.md-34 {
+  font-size: 34px !important;
+  height: 34px !important;
+  width: 34px !important;
+}
+
+.material-icons.md-32 {
+  font-size: 32px !important;
+  height: 32px !important;
+  width: 32px !important;
 }
 
 #home_icon {
-  padding: 3px;
+  padding: 6px;
 }
 
 #music_icon {
-  padding: 4px;
+  padding: 8px;
 }
 
-.musicplayer {
+.tab_icon {
+  color: #6C7689;
+}
+
+.musicplayer1 {
   background-color: #171C26;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   position: fixed;
   bottom: -160px;
+  left: 0;
   margin: 0 auto;
   z-index: 9998;
   width: 84%;
-  width: 100%;
-  max-width: 480px;
   height: 320px;
   text-align: center;
-  cursor: pointer;
+  margin-left: 8%;
+  padding-top: 1em;
+}
+
+.musicplayer1 iframe {
+  position: relative;
+  float: top;
+  margin-top: 8px;
+  display: none;
+  z-index: 9999;
+}
+
+.musicplayer2 {
+  background-color: transparent;
+  border-radius: 40px;
+  position: fixed;
+  bottom: -160px;
+  left: 0;
+  margin: 0 auto;
+  z-index: 9998;
+  width: 84%;
+  height: 320px;
+  text-align: center;
   margin-left: 8%;
 }
 
-.down_icon {
-  width: 40px;
+.down-icon {
+  color: transparent;
   display: none;
+  z-index: 9999;
+  position: absolute;
+}
+
+.playpause {
+  position: absolute;
+  top: 1.5em;
+  right: 1em;
+  z-index: 9999;
+  background-color: #171C26;
 }
 
 #imgIcon {
@@ -120,29 +339,21 @@
   margin-left: 4%;
 }
 
+.API {
+  margin-left: -5em;
+  margin-bottom: 3em;
+}
   
 /* Change the color of links on hover */
-.tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
+.tabbar span:hover {
+  color: #171C26;
 }
   
   /* Add a color to the active/current link */
-.tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--green);
+.tabbar .active .tab_icon {
+  color: #171C26;
 }
 
-@media screen and (max-width: 1000px) {
-  .page {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .musicplayer {
-    width:100%;
-    margin:0;
-  }
 /* ---------- grid container styling ---------- */
 
 .grid-container {
@@ -167,13 +378,13 @@
 .grid-container > article {
   text-align: center;
   padding: 2em 1em;
-  background-color: var(--white);
+  background-color: white;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .grid-container > article:hover {
-  box-shadow: 0 8px 16px 0 var(--green-opacity);
+  box-shadow: 0 8px 16px 0 #6C7689;
 }
 
 .grid-container > article img {
@@ -186,16 +397,123 @@
 
 .grid-container > article h4 {
   width: 100%;
-  max-width: 100px;
+  max-width: 150px;
   margin: 0 auto;
   text-align: center;
   padding: 10px 10px;
   color: #171C26;
+  text-transform: uppercase;
+}
+
+.grid-container > article p {
+  padding-bottom: 5px;
+  font-size: 14px;
 }
 
 .grid-container .empty {
   grid-column: 1 / span 3;
   grid-row: 3;
+}
+
+/* ---------- Genres page styling ---------- */
+
+.genres_page {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.genres-page-content {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.genre_img {
+  height: 250px;
+  max-width: 450px;
+  width: 100%;
+  opacity: 60%;
+  margin-top: 12px;
+  margin-bottom: 1px;
+  border-bottom: 1px solid #A4AAB7;
+}
+
+.genre_heading {
+  color: #171C26;
+  text-transform: uppercase;
+  font-size: 30px;
+  position: relative;
+  margin-top: -160px;
+  text-align: center;
+}
+
+.genre_heading2 {
+  color: #171C26;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+  text-align: center;
+  font-weight: 600;
+}
+
+.down_icon {
+  display: grid;
+  width: 100%;
+  max-width: 20px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.genre_heading3 {
+  color: #171C26;
+  font-size: 11px;
+  position: relative;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1px;
+  text-decoration: underline;
+}
+
+/* ---------- Music page styling ---------- */
+
+.tab-menu {
+  background-color: #171C26;
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-menu button {
+  background-color: inherit;
+  color: #6C7689;
+  cursor: pointer;
+  width: 50%;
+  padding: 8px 0;
+}
+
+.tab-menu button:hover {
+  color: white;
+}
+
+.tab-menu button:active {
+  color: white;
+  text-decoration: underline;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab1 {
+  display: block;
+}
+
+.heart {
+  position: relative;
+  top: 0;
+  color: white; 
+}
+
+.page-content2 .heart {
+  color: red;
 }
 
 /* ---------- Artists page styling ---------- */
@@ -205,4 +523,211 @@
   padding-left: 30px;
   padding-top: 30px;
   font-size: 30px;
+}
+
+.line1 {
+  width: 200px;
+  border: 1px solid #DFDFDF;
+  margin-top: 8px;
+  margin-left: 30px;
+  display: block;
+}
+
+/* ---------- tools grid styling ---------- */
+
+.tools-grid {
+  background-color: #A4AAB7;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 24px 1em;
+  gap: 1em;
+  justify-items: left;
+  padding-left: 37%;
+  padding-right: 40%;
+}
+
+.tools-grid-container {
+  border: 2px solid #6C7689;
+  margin-top: 5px;
+  height: 30px;
+}
+
+@media (min-width: 420px) {
+  .tools-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.tools-grid label{
+  max-width: 350px;
+}
+
+/* ---------- Detailed artist page styling ---------- */
+
+.detailed-page {
+  margin-top: 0;
+}
+
+.artist-container > article img {
+    width: 100%;
+    opacity: 70%;
+    top: 0;
+    margin: 0 auto;
+}
+
+.artist-container> article h2 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: -170px;
+  font-size: 40px;
+  color: #171C26;
+}
+
+.artist-container> article h3 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: -170px;
+  font-size: 20px;
+  color: #171C26;
+}
+
+.artist-container> article h4 {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  top: -170px;
+  font-size: 15px;
+  color: #171C26;
+}
+
+.artist-header {
+  font-size: 17px;
+  text-transform: uppercase;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  color: #171C26;
+}
+
+.line2 {
+  width: 80%;
+  border: 1px solid white;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.artist-biography {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 80%;
+  color: #171C26;
+}
+
+@media screen and (max-width: 1000px) {
+  .page {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .topbar {
+    width: 100%;
+  }
+
+  .musicplayer1 {
+    width:100%;
+    margin:0;
+  }
+
+  .video-card iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .line {
+    width: 75%;
+  }
+
+  .triangle {
+    top: 49%;
+    left: 48%
+  }
+
+  .popup-info {
+    width: 100%;
+    left: 0;
+    top: 53%;
+  }
+
+  .popup-line {
+    width: 95%;
+  }
+
+  .help-box {
+    width: 80%;
+    padding: 32px 16px;
+  }
+
+  .fav_button {
+    margin-right: 8px;
+    margin-top: 3px;
+  }
+
+  .playpause {
+    right: 0;
+  }
+
+  .genres-page-content {
+    padding: 0;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .triangle {
+    top: 38%;
+  }
+
+  .popup-info {
+    top: 41.5%;
+  }
+}
+
+@media screen and (max-height: 740px) {
+  .triangle {
+    top: 50%;
+  }
+
+  .popup-info {
+    top: 55%;
+  }
+}
+
+@media screen and (max-height: 599px) {
+  .triangle {
+    top: 54.5%;
+  }
+
+  .popup-info {
+    top: 60%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .triangle {
+    top: 45%;
+  }
+  .popup-info {
+    top: 49%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .triangle {
+    top: 480px;
+  }
+  .popup-info {
+    top: 512px;
+  }
 }

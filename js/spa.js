@@ -1,5 +1,7 @@
 "use strict";
 
+/* Made by: Marcell */
+
 // hide all pages
 function hideAllPages() {
   let pages = document.querySelectorAll(".page");
