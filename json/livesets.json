@@ -1,0 +1,93 @@
+[
+    {
+        "id": 0,
+        "title": "Viper Diva at Unpolished 2020",
+        "artist": "Viper Diva",
+        "genre": "Techno",
+        "youtube_api": "https://www.youtube.com/embed/YZkw9qBgdDg"
+    }, {
+        "id": 1,
+        "title": "I Hate Models - live at Nuits Sonores",
+        "artist": "I Hate Models",
+        "genre": "Techno",
+        "youtube_api": "https://www.youtube.com/embed/2EaxYi31ips"
+    }, {
+        "id": 2,
+        "title": "Clara Cuvé at Boiler Room Madrid: Mondo Disko XIX",
+        "artist": "Clara Cuve",
+        "genre": "Techno",
+        "youtube_api": "https://www.youtube.com/embed/85X3Z2EMgsI"
+    }, {
+        "id": 3,
+        "title": "Kobosil DJ Set at Awakenings Festival 2017",
+        "artist": "Kobosil",
+        "genre": "Techno",
+        "youtube_api": "https://www.youtube.com/embed/1V_Yxqx5_BM"
+    }, {
+        "id": 4,
+        "title": "Alignment at Room Lab / Room Trax",
+        "artist": "Alignment",
+        "genre": "Techno",
+        "youtube_api": "https://www.youtube.com/embed/S3G-UtZazog"
+    }, {
+        "id": 5,
+        "title": "Nico Moreno live from Castle of Gormaz",
+        "artist": "Nico Moreno",
+        "genre": "Hard Techno",
+        "youtube_api": "https://www.youtube.com/embed/bxSGNnqYOuk"
+    }, {
+        "id": 6,
+        "title": "SveTec at ECO festival",
+        "artist": "Svetec",
+        "genre": "Hard Techno",
+        "youtube_api": "https://www.youtube.com/embed/5_OKhOJI90g"
+    }, {
+        "id": 7,
+        "title": "Perc at Vault Sessions V",
+        "artist": "Perc",
+        "genre": "Hard Techno",
+        "youtube_api": "https://www.youtube.com/embed/XfSvoSCuVe0"
+    }, {
+        "id": 8,
+        "title": "Klangkuenstler - Vinyl Only Set 2021",
+        "artist": "Klangkuenstler",
+        "genre": "Hard Techno",
+        "youtube_api": "https://www.youtube.com/embed/9w0irSFx8-o"
+    }, {
+        "id": 9,
+        "title": "O.B.I. at Please Rave Harder",
+        "artist": "O.B.I.",
+        "genre": "Hard Techno",
+        "youtube_api": "https://www.youtube.com/embed/fOb5zhqJINs"
+    }, {
+        "id": 10,
+        "title": "ARTBAT at Bondinho Pão de Açúcar in Rio de Janeiro",
+        "artist": "Artbat",
+        "genre": "Melodic Techno",
+        "youtube_api": "https://www.youtube.com/embed/hENgrbIMiy4"
+    }, {
+        "id": 11,
+        "title": "Maceo Plex at Hudson River in New York",
+        "artist": "Maceo Plex",
+        "genre": "Melodic Techno",
+        "youtube_api": "https://www.youtube.com/embed/8x13vB2yK30"
+    }, {
+        "id": 12,
+        "title": "Mind Against at Centro Ceremonial Otomí in Mexico",
+        "artist": "Mind Against",
+        "genre": "Melodic Techno",
+        "youtube_api": "https://www.youtube.com/embed/coloJDqNBRg"
+    }, {
+        "id": 13,
+        "title": "Mathame at Reforma 180 Heliport in Mexico",
+        "artist": "Mathame",
+        "genre": "Melodic Techno",
+        "youtube_api": "https://www.youtube.com/embed/dQjkqyc5nlc"
+    }, {
+        "id": 14,
+        "title": "Tale Of Us at Paris-Charles de Gaulle Airport in France",
+        "artist": "Tale of Us",
+        "genre": "Melodic Techno",
+        "youtube_api": "https://www.youtube.com/embed/RrKEfwxZwIo"
+    }
+]

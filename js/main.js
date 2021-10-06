@@ -38,11 +38,13 @@ function openTab(evt,tabName) {
 
 /* ------- MUSIC page ------- */
 
+/* ------- Tracks section ------- */
+
 let _tracks = [];
 let _BPMs = [];
 let _types = [];
 
-// fetch data from the artists json file
+// fetch data from the music json file
 
 async function fetchData2() {
     const response = await fetch('json/music.json');
@@ -198,6 +200,40 @@ function showSong(id) {
             ${trackToPlay.BPM} BPM</p>
         </article>
     `;
+}
+
+/* ------- Livesets section ------- */
+
+let _livesets = [];
+
+// fetch data from the livesets json file
+
+async function fetchLivesets() {
+    const response = await fetch('json/livesets.json')
+    const data = await response.json();
+    _livesets = data;
+    console-log(_livesets);
+    appendLivesets(_livesets);
+}
+
+//append livesets to the DOM
+
+
+
+function appendLivesets(livesets) {
+    let htmlTemplate = "";
+    for (let liveset of livesets) {
+        htmlTemplate += /*html*/`
+        <article onclick="showSong(${liveset.id})">
+        <a href ="${liveset.youtube_api}">
+        <span id="heart" class="material-icons md-40 heart" style="color: white; margin-left: -60px; top: -195px;">favorite</span>
+        <h4>${liveset.title}</h4>
+        <h5>${liveset.artist}</h5>
+        <p>Genre: ${liveset.genre}</p>
+        </article>
+    `;
+    }
+    document.querySelector('#gridLivesets').innerHTML = htmlTemplate;
 }
 
 /* ------- Music player ------- */
