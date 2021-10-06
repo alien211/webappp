@@ -1,93 +1,129 @@
 [
-    {
-        "id": 0,
-        "name": "Viper Diva",
-        "genre": "Techno",
-        "country": "France",
-        "img_url": "https://ra.co/images/profiles/square/viperdiva.jpg?dateUpdated=1586523896000"
-    }, {
-        "id": 1,
-        "name": "I Hate Models",
-        "genre": "Techno",
-        "country": "France",
-        "img_url": "https://akvariumklub.hu/wp-content/uploads/2021/06/Credit-Soraya-Sanini-scaled.jpeg"
-    }, {
-        "id": 2,
-        "name": "Clara Cuve",
-        "genre": "Techno",
-        "country": "Germany",
-        "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/116103013_1383971285132901_5149963547446792984_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=9267fe&_nc_ohc=CBhoo4h59HMAX91vJcn&_nc_ht=scontent-cph2-1.xx&oh=e728475b3143b7089c0703df40965126&oe=6173B0C1"
-    }, {
-        "id": 3,
-        "name": "Kobosil",
-        "genre": "Techno",
-        "country": "Germany",
-        "img_url": "https://img.discogs.com/Yyfn3KQj6JxTaal3YPjqVju1At8=/600x600/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-3123359-1559741747-1342.jpeg.jpg"
-    }, {
-        "id": 4,
-        "name": "Alignment",
-        "genre": "Techno",
-        "country": "Germany",
-        "img_url": "https://www.onlytechno.net/wp-content/uploads/2020/11/Alignment-press-pic.jpg"
-    }, {
-        "id": 5,
-        "name": "Nico Moreno",
-        "genre": "Hard Techno",
-        "country": "France",
-        "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/236994727_361263452112097_3785293442289219122_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=EOwGzPXyS-gAX85tcU5&_nc_ht=scontent-cph2-1.xx&oh=66bc494c3129767bf5549c7b7651fdca&oe=6172E4AD"
-    }, {
-        "id": 6,
-        "name": "Svetec",
-        "genre": "Hard Techno",
-        "country": "Hungary",
-        "img_url": "https://i1.sndcdn.com/avatars-NEBEvdsmYEzsSrzs-J6bEpA-t500x500.jpg"
-    }, {
-        "id": 7,
-        "name": "Perc",
-        "genre": "Hard Techno",
-        "country": "UK",
-        "img_url": "https://media.ntslive.co.uk/crop/400x400/a698759e-5f2a-4be2-ad16-af507458845a_1447851907.jpg"
-    }, {
-        "id": 8,
-        "name": "Klangkuenstler",
-        "genre": "Hard Techno",
-        "country": "Germany",
-        "img_url": "https://i1.sndcdn.com/avatars-000493848636-owfsqn-t500x500.jpg"
-    }, {
-        "id": 9,
-        "name": "O.B.I.",
-        "genre": "Hard Techno",
-        "country": "Germany",
-        "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/132413137_234528821364692_8592100997326003139_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=2CffZieC52wAX8QOzt2&_nc_ht=scontent-cph2-1.xx&oh=d8089280acc0d2f488042efa246e6a9f&oe=61751614"
-    }, {
-        "id": 10,
-        "name": "Artbat",
-        "genre": "Melodic Techno",
-        "country": "Ukraine",
-        "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/121480789_205112377640280_16715859228658323_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=eqwfptDun-oAX8NX2F4&_nc_ht=scontent-cph2-1.xx&oh=76b574405182d63e6a441c529b4e9444&oe=61742BF6"
-    }, {
-        "id": 11,
-        "name": "Maceo Plex",
-        "genre": "Melodic Techno",
-        "country": "USA",
-        "img_url": "https://pbs.twimg.com/profile_images/1308543020166451201/ZiBnEGU__400x400.jpg"
-    }, {
-        "id": 12,
-        "name": "Mind Against",
-        "genre": "Melodic Techno",
-        "country": "Italy",
-        "img_url": "https://geo-media.beatport.com/image_size/500x500/8e778d51-3342-4e77-bc32-f2f72d640278.jpg"
-    }, {
-        "id": 13,
-        "name": "Mathame",
-        "genre": "Melodic Techno",
-        "country": "Italy",
-        "img_url": "https://whenwedip.com/wp-content/uploads/2020/03/Mathame.jpeg"
-    }, {
-        "id": 14,
-        "name": "Tale of Us",
-        "genre": "Melodic Techno",
-        "country": "Italy",
-        "img_url": "https://images.universal-music.de/img/assets/426/426869/991/720/tale-of-us.jpg"
-    }   
+{
+
+    "id": 0,
+
+    "name": "Viper Diva",
+    "genre": "Techno",
+    "country": "France",
+    "img_url": "https://ra.co/images/profiles/square/viperdiva.jpg?dateUpdated=1586523896000"
+}, {
+
+    "id": 1,
+
+    "name": "I Hate Models",
+    "genre": "Techno",
+    "country": "France",
+    "img_url": "https://akvariumklub.hu/wp-content/uploads/2021/06/Credit-Soraya-Sanini-scaled.jpeg"
+}, {
+
+    "id": 2,
+
+    "name": "Clara Cuve",
+    "genre": "Techno",
+    "country": "Germany",
+    "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/116103013_1383971285132901_5149963547446792984_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=9267fe&_nc_ohc=CBhoo4h59HMAX91vJcn&_nc_ht=scontent-cph2-1.xx&oh=e728475b3143b7089c0703df40965126&oe=6173B0C1"
+}, {
+
+    "id": 3,
+
+    "name": "Kobosil",
+    "genre": "Techno",
+    "country": "Germany",
+    "img_url": "https://img.discogs.com/Yyfn3KQj6JxTaal3YPjqVju1At8=/600x600/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-3123359-1559741747-1342.jpeg.jpg"
+}, {
+
+    "id": 4,
+
+    "name": "Alignment",
+    "genre": "Techno",
+    "country": "Germany",
+    "img_url": "https://www.onlytechno.net/wp-content/uploads/2020/11/Alignment-press-pic.jpg"
+}, {
+
+    "id": 5,
+
+    "name": "Nico Moreno",
+    "genre": "Hard Techno",
+    "country": "France",
+    "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/236994727_361263452112097_3785293442289219122_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=EOwGzPXyS-gAX85tcU5&_nc_ht=scontent-cph2-1.xx&oh=66bc494c3129767bf5549c7b7651fdca&oe=6172E4AD"
+}, {
+
+    "id": 6,
+
+    "name": "Svetec",
+    "genre": "Hard Techno",
+    "country": "Hungary",
+    "img_url": "https://i1.sndcdn.com/avatars-NEBEvdsmYEzsSrzs-J6bEpA-t500x500.jpg"
+}, {
+
+    "id": 7,
+
+    "name": "Perc",
+    "genre": "Hard Techno",
+    "country": "UK",
+    "img_url": "https://media.ntslive.co.uk/crop/400x400/a698759e-5f2a-4be2-ad16-af507458845a_1447851907.jpg"
+}, {
+
+    "id": 8,
+
+    "name": "Klangkuenstler",
+    "genre": "Hard Techno",
+    "country": "Germany",
+    "img_url": "https://i1.sndcdn.com/avatars-000493848636-owfsqn-t500x500.jpg"
+}, {
+
+    "id": 9,
+
+    "name": "O.B.I.",
+    "genre": "Hard Techno",
+    "country": "Germany",
+    "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/132413137_234528821364692_8592100997326003139_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=2CffZieC52wAX8QOzt2&_nc_ht=scontent-cph2-1.xx&oh=d8089280acc0d2f488042efa246e6a9f&oe=61751614"
+}, {
+
+    "id": 10,
+
+    "name": "Artbat",
+    "genre": "Melodic Techno",
+    "country": "Ukraine",
+    "img_url": "https://scontent-cph2-1.xx.fbcdn.net/v/t1.6435-9/121480789_205112377640280_16715859228658323_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=eqwfptDun-oAX8NX2F4&_nc_ht=scontent-cph2-1.xx&oh=76b574405182d63e6a441c529b4e9444&oe=61742BF6"
+}, {
+
+    "id": 11,
+    "name": "Maceo Plex",
+    "genre": "Melodic Techno",
+    "country": "USA",
+    "img_url": "https://pbs.twimg.com/profile_images/1308543020166451201/ZiBnEGU__400x400.jpg"
+}, {
+    "id": 12,
+
+    "name": "Hot Since 82",
+    "genre": "Melodic Techno",
+    "country": "UK",
+    "img_url": "https://www.techno-livesets.com/wp-content/uploads/edd/2019/04/Hot-Since-82-Mirante-9-de-Julho-Brazil-27-03-2019.jpg"
+}, {
+
+    "name": "Mind Against",
+    "genre": "Melodic Techno",
+    "country": "Italy",
+    "img_url": "https://geo-media.beatport.com/image_size/500x500/8e778d51-3342-4e77-bc32-f2f72d640278.jpg"
+}, {
+
+    "id": 13,
+
+    "name": "Mathame",
+    "genre": "Melodic Techno",
+    "country": "Italy",
+    "img_url": "https://whenwedip.com/wp-content/uploads/2020/03/Mathame.jpeg"
+}, {
+
+    "id": 14,
+
+    "name": "Tale of Us",
+    "genre": "Melodic Techno",
+    "country": "Italy",
+    "img_url": "https://images.universal-music.de/img/assets/426/426869/991/720/tale-of-us.jpg"
+
+}   
+
 ]
