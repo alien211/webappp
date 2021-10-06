@@ -245,12 +245,6 @@ let _artists = [];
 let _genres = [];
 let _country = [];
 
-}
-
-/* ------- Artists page ------- */
-
-let _artists = [];
-
 // fetch data from the artists json file
 
 async function fetchData() {
