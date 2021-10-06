@@ -94,15 +94,6 @@ function appendTracks(tracks) {
     document.querySelector('#gridTracks2').innerHTML = htmlTemplate;
 }
 
-/*document.getElementsByClass("heart").onclick = function Like() {
-    if (document.getElementById("heart").style.color != "red") {
-        document.getElementById("heart").style.color = "red";
-    }
-    else {
-        document.getElementById("heart").style.color = "white";
-    }
-}*/
-
 // sorting functions
 
 function orderBy2(option) {
