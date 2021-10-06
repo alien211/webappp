@@ -197,21 +197,38 @@ function showSong(id) {
             <p>${trackToPlay.genre} - ${trackToPlay.subgenre}<br>
             ${trackToPlay.BPM} BPM</p>
         </article>
+        <iframe id="API" src="${trackToPlay.spotify_api}" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
     `;
 }
+
+document.getElementById("playBtn").addEventListener("click", function play(event){
+	fetch("https://open.spotify.com/embed/track/2bDe4PKld6qpRUZS9Gki14",
+    {
+        method: 'PUT',
+        dataType: 'json',
+        body: JSON.stringify({
+            "context_uri": "spotify:album:5ht7ItJgpBH7W6vJ5BqpPr",
+            "offset": {
+              "position": 5
+            },
+            "position_ms": 0
+          })
+    })
+});
 
 /* ------- Music player ------- */
 
 /* Opens music player and enlarges the image */
 function openPlayer() {
-    document.getElementById("musicPlayer").style.bottom="0px";
-    document.getElementById("musicPlayer2").style.bottom="0px";
+    document.getElementById("musicPlayer").style.bottom="40px";
+    document.getElementById("musicPlayer2").style.bottom="40px";
     document.getElementById("musicPlayer").style.cursor="default";
     document.getElementById("downIcon").style.display="inline-block";
     document.getElementById("downIcon").style.color="#6C7689";
     document.getElementById("imgIcon").style.width="160px";
     document.getElementById("smallTxt").style.display="none";
     document.getElementById("bigTxt").style.display="block";
+    document.getElementById("API").style.display="block";
 }
 
 function closePlayer() {
@@ -223,6 +240,7 @@ function closePlayer() {
     document.getElementById("imgIcon").style.width="40px";
     document.getElementById("smallTxt").style.display="block";
     document.getElementById("bigTxt").style.display="none";
+    document.getElementById("API").style.display="none";
 }
 
 

@@ -279,7 +279,7 @@
 
 .musicplayer1 {
   background-color: #171C26;
-  border-radius: 40px;
+  border-radius: 40px 40px 0px 0px;
   position: fixed;
   bottom: -160px;
   left: 0;
@@ -293,9 +293,10 @@
 }
 
 .musicplayer1 iframe {
-  position: absolute;
-  bottom: 0;
-  left: 80px;
+  position: relative;
+  float: top;
+  margin-top: 8px;
+  display: none;
   z-index: 9999;
 }
 
@@ -332,6 +333,11 @@
   width: 40px;
   float: left;
   margin-left: 4%;
+}
+
+.API {
+  margin-left: -5em;
+  margin-bottom: 3em;
 }
   
 /* Change the color of links on hover */
@@ -413,7 +419,8 @@
 }
 
 .genres-page-content {
-  padding: 0;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .genre_img {
@@ -660,6 +667,10 @@
 
   .playpause {
     right: 0;
+  }
+
+  .genres-page-content {
+    padding: 0;
   }
 }
 
