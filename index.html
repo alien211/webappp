@@ -191,7 +191,7 @@
             </label> 
           </section>
 
-          <section id="gridTracks" class="grid-container"></section>
+          <section id="gridTracks2" class="grid-container"></section>
       
           <br><br><br><br><br><br><br><br> 
         </section>
@@ -294,7 +294,31 @@
         <header class="topbar black-mode">
           <div class="heading"><h2>Favourites</h2></div>
         </header>
-        <section class="page-content">
+        <section class="page-content2">
+
+          <section class="tools-grid">
+            <label for="sortBy2"><b>Order by:</b> <br>
+              <select id="sortBy2" class="tools-grid-container" onchange="orderBy2(this.value)">
+              <option selected disabled>Choose here</option>
+              <option value="title">Title</option>
+            </select>
+            </label>
+
+            <label for="sortBy2"><b>BPM:</b> <br>
+              <select id="sortByBPM" class="tools-grid-container" onchange="orderByBPM(this.value)">
+              <option selected disabled>Choose here</option>
+              <option value="BPM">BPM</option>
+            </select>
+            </label>
+  
+            <label for="sortBy2"><b>Genres:</b> <br>
+              <select id="sortByGenre2" class="tools-grid-container" onchange="filterByGenre2(this.value)">
+              <option selected disabled>Choose here</option>
+            </select>
+            </label> 
+          </section>
+
+          <section id="gridTracks" class="grid-container"></section>
           
           <br><br><br><br><br><br><br><br><br><br> 
         </section>

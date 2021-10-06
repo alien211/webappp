@@ -68,6 +68,10 @@
   padding: 8px;
 }
 
+.page-content2 {
+  padding: 0;
+}
+
 .fav_button {
   width: 40px;
   height: 40px;
@@ -505,6 +509,11 @@
 .heart {
   position: relative;
   top: 0;
+  color: white;
+}
+
+.page-content2 .heart {
+  color: red;
 }
 
 /* ---------- Artists page styling ---------- */

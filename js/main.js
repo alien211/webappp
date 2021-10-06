@@ -82,7 +82,7 @@ function appendTracks(tracks) {
         htmlTemplate += /*html*/`
         <article onclick="showSong(${track.id})">
         <img src="${track.img_url}">
-        <span id="heart" class="material-icons md-40 heart" style="color: white; margin-left: -60px; top: -195px;">favorite</span>
+        <span id="heart" class="material-icons md-40 heart" style="margin-left: -60px; top: -195px;">favorite</span>
         <h4>${track.title}</h4>
         <h5>${track.artist}</h5>
         <p>Genre: ${track.genre}</p>
@@ -91,6 +91,7 @@ function appendTracks(tracks) {
     `;
     }
     document.querySelector('#gridTracks').innerHTML = htmlTemplate;
+    document.querySelector('#gridTracks2').innerHTML = htmlTemplate;
 }
 
 /*document.getElementsByClass("heart").onclick = function Like() {
