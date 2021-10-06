@@ -1,0 +1,147 @@
+[
+    {
+        "id": 0,
+        "title": "Reload",
+        "artist": "Sebastian Ingrosso",
+        "genre": "House",
+        "subgenre": "Festival progressive",
+        "BPM": 128,
+        "img_url": "https://i.pinimg.com/564x/2e/70/da/2e70da922036dcbbf5d6f83878aea9e2.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/2bDe4PKld6qpRUZS9Gki14"
+    }, {
+        "id": 1,
+        "title": "Born to Be Slytheryn - Tbilisi Mix",
+        "artist": "Viper Diva",
+        "genre": "Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 144,
+        "img_url": "https://m.media-amazon.com/images/I/715zNff59aL._SS500_.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/3lA871a0Ax9FvYNDALQIZd"
+    }, {
+        "id": 2,
+        "title": "Two Steps from Heaven",
+        "artist": "I Hate Models",
+        "genre": "Techno",
+        "subgenre": "Raw / Deep / Hypnotic",
+        "BPM": 145,
+        "img_url": "https://i1.sndcdn.com/artworks-3zUwtdQfAd2DLNqC-7z4oEQ-t500x500.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/0eRbOJ7nguOh6UCV1Lbpwn" 
+    }, {
+        "id": 3,
+        "title": "Control",
+        "artist": "Clara Cuve",
+        "genre": "Techno",
+        "subgenre": "",
+        "BPM": 142,
+        "img_url": "https://f4.bcbits.com/img/a1058832812_5.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/7DiK4Zb8foUGz0DdmLGOCH"
+    }, {
+        "id": 4,
+        "title": "Rigid",
+        "artist": "Kobosil",
+        "genre": "Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 135,
+        "img_url": "https://i1.sndcdn.com/artworks-000589745171-df8s5l-t500x500.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/6Uv0QLfMnAteF6KT0Fltbn"
+    }, {
+        "id": 5,
+        "title": "Time",
+        "artist": "Alignment",
+        "genre": "Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 138,
+        "img_url": "https://i1.sndcdn.com/artworks-zzWqyE0hzY2ejZoC-0bVOmQ-t500x500.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/65avt9HtCTofE3r4sYGs48"
+    }, {
+        "id": 6,
+        "title": "Purple Widow",
+        "artist": "Nico Moreno",
+        "genre": "Hard Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 145,
+        "img_url": "https://i1.sndcdn.com/artworks-000540838116-ddlh5b-t500x500.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/3OycrGOe84DHAO3crPP2qW"
+    }, {
+        "id": 7,
+        "title": "Set Up",
+        "artist": "Svetec",
+        "genre": "Hard Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 146,
+        "img_url": "https://geo-media.beatport.com/image_size/500x500/8e216f73-a9be-40ed-b379-0b5aecdd41a8.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/25fchX4tVWlFGRvh6K2KHO"
+    }, {
+        "id": 8,
+        "title": "Fire In Negative",
+        "artist": "Perc",
+        "genre": "Hard Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 140,
+        "img_url": "https://f4.bcbits.com/img/a3324913850_10.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/3gEV3FUMIM79zpQ1vNoV3m"
+    }, {
+        "id": 9,
+        "title": "Ihr Werdet Weinen",
+        "artist": "Klangkuenstler",
+        "genre": "Hard Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 137,
+        "img_url": "https://i1.sndcdn.com/artworks-NwnvtQYQcjgJCOoc-vMMUpg-t500x500.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/385poZDk3lEmonwvCr5XUl"
+    }, {
+        "id": 10,
+        "title": "Warehouse Massacre",
+        "artist": "O.B.I.",
+        "genre": "Hard Techno",
+        "subgenre": "Peak Time / Driving",
+        "BPM": 155,
+        "img_url": "https://img.discogs.com/IpHf9qFUQNsbWXt1DomouZD43us=/fit-in/600x600/filters:strip_icc():format(webp):mode_rgb():quality(90)/discogs-images/R-7235882-1436813842-6303.jpeg.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/3LuWKd1KPzVkkKeVLFWJl6"
+    }, {
+        "id": 11,
+        "title": "Return to Oz - Artbat Remix",
+        "artist": "Artbat",
+        "genre": "Melodic Techno",
+        "subgenre": "Melodic",
+        "BPM": 124,
+        "img_url": "https://img.discogs.com/hzucTF0EK2a5jCd-D7k5l_X5rB4=/fit-in/500x500/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/R-13761065-1560540464-2773.jpeg.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/0gwNGHcBRYtF7mvgUczVo1" 
+    }, {
+        "id": 12,
+        "title": "Conjure Dreams",
+        "artist": "Maceo Plex",
+        "genre": "Melodic Techno",
+        "subgenre": "Melodic",
+        "BPM": 124,
+        "img_url": "https://m.media-amazon.com/images/I/81rcQoXMzSL._SS500_.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/6TcpM1p0xHy1smBjxEF73s"
+    }, {
+        "id": 13,
+        "title": "Astral",
+        "artist": "Mind Against",
+        "genre": "Melodic Techno",
+        "subgenre": "Melodic",
+        "BPM": 124,
+        "img_url": "https://geo-media.beatport.com/image_size/500x500/e92e5001-81c4-45e4-98b8-e8df19880d13.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/6wkY7U23a942MCrwMbGDWb"
+    }, {
+        "id": 14,
+        "title": "Skywalking",
+        "artist": "Mathame",
+        "genre": "Melodic Techno",
+        "subgenre": "Melodic",
+        "BPM": 127,
+        "img_url": "https://i1.sndcdn.com/artworks-000492999144-i90weg-t500x500.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/0so587BGO1K3OU3fMqF25I"
+    }, {
+        "id": 15,
+        "title": "Hold Me To The Light - Tale of Us Remix",
+        "artist": "Tale of Us",
+        "genre": "Melodic Techno",
+        "subgenre": "Melodic",
+        "BPM": 126,
+        "img_url": "https://i1.sndcdn.com/artworks-000651585196-w26n3u-t500x500.jpg",
+        "spotify_api": "https://open.spotify.com/embed/track/3Allgqu3MaHE8QFvzoP90S" 
+    }
+]
