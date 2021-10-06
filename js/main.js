@@ -230,6 +230,7 @@ function closePlayer() {
     document.getElementById("musicPlayer2").style.bottom="-160px";
     document.getElementById("musicPlayer").style.cursor="pointer";
     document.getElementById("downIcon").style.display="none";
+
     document.getElementById("downIcon").style.color="transparent";
     document.getElementById("imgIcon").style.width="40px";
     document.getElementById("smallTxt").style.display="block";
@@ -244,6 +245,12 @@ let _artists = [];
 let _genres = [];
 let _country = [];
 
+}
+
+/* ------- Artists page ------- */
+
+let _artists = [];
+
 // fetch data from the artists json file
 
 async function fetchData() {
@@ -252,6 +259,7 @@ async function fetchData() {
     _artists = data;
     console.log(_artists);
     appendArtists(_artists);
+
 
     const genres = _artists.map(artist => artist.genre);
     console.log(genres);
@@ -265,17 +273,21 @@ async function fetchData() {
 
     _country = [...new Set(country)]
     console.log(_country);
-    appendCountry(_country);
+
+    showLoader(false);
 }
 
 fetchData();
 
+
 //append artists to the DOM
+
 
 function appendArtists(artists) {
     let htmlTemplate = "";
     for (let artist of artists) {
         htmlTemplate += /*html*/`
+
         <article onclick="showDetailedPage(${artist.id})">
         <img src="${artist.img_url}">
         <h4>${artist.name}</h4>
@@ -355,6 +367,7 @@ function appendArtistsByGenre(artistsByGenre) {
     let htmlTemplate = "";
     for (let artist of artistsByGenre) {
         htmlTemplate += /*html*/       `
+
         <article>
         <img src="${artist.img_url}">
         <h4>${artist.name}</h4>
@@ -363,6 +376,7 @@ function appendArtistsByGenre(artistsByGenre) {
         </article>
     `;
     }
+
     // if no genres, display feedback to the user
     if (artistsByGenre.length === 0) {
         htmlTemplate = /*html*/      `
@@ -386,4 +400,5 @@ function showDetailedPage(id) {
         <h4>${artistToShow.country}</h4>
         </article>
     `;
+    document.querySelector('#gridArtists').innerHTML = htmlTemplate;
 }
