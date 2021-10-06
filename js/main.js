@@ -1,6 +1,6 @@
 "use strict";
 
-/* -------- Popup information --------- */
+/* -------- Popup information --------- */ /* Made by: Nikola */
 
 document.getElementById("info").onclick = function openPopup() {
     if (document.getElementById("popupInfo").style.display != "none")
@@ -14,7 +14,7 @@ document.getElementById("info").onclick = function openPopup() {
     }
 }
 
-/* -------- Music page -------- */
+/* -------- Music page -------- */ /* Made by: Nikola */
 
 function openTab(evt,tabName) {
     var i, tabcontent, tablinks;
@@ -36,7 +36,7 @@ function openTab(evt,tabName) {
     evt.currentTarget.className += " active";
 }
 
-/* ------- MUSIC page ------- */
+/* ------- MUSIC page ------- */ /* Made by: Nikola */
 
 /* ------- Tracks section ------- */
 
@@ -218,39 +218,8 @@ document.getElementById("playBtn").addEventListener("click", function play(event
           })
     })
 });
-/* ------- Livesets section ------- */
 
-let _livesets = [];
-
-// fetch data from the livesets json file
-
-async function fetchLivesets() {
-    const response = await fetch('json/livesets.json');
-    const data = await response.json();
-    _livesets = data;
-    console-log(_livesets);
-    appendLivesets(_livesets);
-}
-
-//append livesets to the DOM
-
-function appendLivesets(livesets) {
-    let htmlTemplate = "";
-    for (let liveset of livesets) {
-        htmlTemplate += /*html*/`
-        <article>
-        <a href ="${liveset.youtube_api}">
-        <span id="heart" class="material-icons md-40 heart" style="color: white; margin-left: -60px; top: -195px;">favorite</span>
-        <h4>${liveset.title}</h4>
-        <h5>${liveset.artist}</h5>
-        <p>Genre: ${liveset.genre}</p>
-        </article>
-    `;
-    }
-    document.querySelector('#gridLivesets').innerHTML = htmlTemplate;
-}
-
-/* ------- Music player ------- */
+/* ------- Music player ------- */ /* Made by: Nikola */
 
 /* Opens music player and enlarges the image */
 function openPlayer() {
@@ -278,7 +247,7 @@ function closePlayer() {
 }
 
 
-/* ------- ARTISTS page ------- */
+/* ------- ARTISTS page ------- */ /* Made by: Marcell */
 
 let _artists = [];
 let _genres = [];
@@ -353,8 +322,6 @@ function orderByGenre() {
     appendArtists(_artists);
 }
 
-// ask Rasmus why this doesn't work
-
 // append all genres and countries as select options (dropdown)
 
 function appendGenres(genres) {
@@ -415,9 +382,7 @@ function appendArtistsByGenre(artistsByGenre) {
 }
 
 
-
-
-/* ------- Detailed artist page ------- */
+/* ------- Detailed artist page ------- */  /* Made by: Marcell */
 
 function showDetailedPage(id) {
     const artistToShow = _artists.find(artist => artist.id === id);
