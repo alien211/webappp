@@ -142,13 +142,6 @@ function appendGenres2(genres) {
     document.querySelector('#sortByGenre2').innerHTML += htmlTemplate;
 }
 
-// filter tracks by selected BPM
-
-function orderByBPM1(BPM) {
-    const results = _tracks.filter(track => track.BPM === BPM);
-    appendTracks(results);
-}
-
 // filter tracks by selected genre
 
 function filterByGenre2(genre) {
