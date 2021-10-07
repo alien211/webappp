@@ -26,7 +26,7 @@ function openTab(evt,tabName) {
     }
 
     // Get all elements with class="tablink" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablink");
+    tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
@@ -144,7 +144,7 @@ function appendGenres2(genres) {
 
 // filter tracks by selected BPM
 
-function orderByBPM(BPM) {
+function orderByBPM1(BPM) {
     const results = _tracks.filter(track => track.BPM === BPM);
     appendTracks(results);
 }

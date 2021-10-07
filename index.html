@@ -163,8 +163,8 @@
           </div></a>
         </header>
         <nav class="tab-menu">
-          <button class="tablink" onclick="openTab(event, 'Tracks')"><h4>Tracks</h4></button>
-          <button class="tablink" onclick="openTab(event, 'Livesets')"><h4>Livesets</h4></button>
+          <div class="tablink" onclick="openTab(event, 'Tracks')"><h4>Tracks</h4></div>
+          <div class="tablink" onclick="openTab(event, 'Livesets')"><h4>Livesets</h4></div>
         </nav>
 
         <section id="Tracks" class="tab-content tab1">
@@ -178,7 +178,7 @@
             </label>
 
             <label for="sortBy2"><b>BPM:</b> <br>
-              <select id="sortByBPM" class="tools-grid-container" onchange="orderByBPM(this.value)">
+              <select id="sortByBPM" class="tools-grid-container" onchange="orderByBPM1(this.value)">
               <option selected disabled>Choose here</option>
               <option value="BPM">BPM</option>
             </select>
@@ -283,40 +283,35 @@
         <br><br>
 
       </section>
-      <section id="detailed-page-container">
-        <br><br><br><br><br><br><br><br><br><br>
-      </section>
-
-      </section>
+      
 
       <!-- FAVOURITES page --> <!-- Made by: Nikola -->
       <section id="favourites" class="page">
         <header class="topbar black-mode">
           <div class="heading"><h2>Favourites</h2></div>
         </header>
+        <section class="tools-grid">
+          <label for="sortBy2"><b>Order by:</b> <br>
+          <select id="sortBy2" class="tools-grid-container" onchange="orderBy2(this.value)">
+            <option selected disabled>Choose here</option>
+            <option value="title">Title</option>
+          </select>
+          </label>
+
+          <label for="sortBy2"><b>BPM:</b> <br>
+          <select id="sortByBPM" class="tools-grid-container" onchange="orderByBPM1(this.value)">
+            <option selected disabled>Choose here</option>
+            <option value="BPM">BPM</option>
+          </select>
+          </label>
+
+          <label for="sortBy2"><b>Genres:</b> <br>
+          <select id="sortByGenre2" class="tools-grid-container" onchange="filterByGenre2(this.value)">
+            <option selected disabled>Choose here</option>
+          </select>
+          </label> 
+        </section>
         <section class="page-content2">
-
-          <section class="tools-grid">
-            <label for="sortBy2"><b>Order by:</b> <br>
-              <select id="sortBy2" class="tools-grid-container" onchange="orderBy2(this.value)">
-              <option selected disabled>Choose here</option>
-              <option value="title">Title</option>
-            </select>
-            </label>
-
-            <label for="sortBy2"><b>BPM:</b> <br>
-              <select id="sortByBPM" class="tools-grid-container" onchange="orderByBPM(this.value)">
-              <option selected disabled>Choose here</option>
-              <option value="BPM">BPM</option>
-            </select>
-            </label>
-  
-            <label for="sortBy2"><b>Genres:</b> <br>
-              <select id="sortByGenre2" class="tools-grid-container" onchange="filterByGenre2(this.value)">
-              <option selected disabled>Choose here</option>
-            </select>
-            </label> 
-          </section>
 
           <section id="gridTracks" class="grid-container"></section>
           

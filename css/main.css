@@ -481,21 +481,23 @@
   flex-direction: row;
 }
 
-.tab-menu button {
+.tablink {
   background-color: inherit;
   color: #6C7689;
   cursor: pointer;
   width: 50%;
   padding: 8px 0;
+  text-align: center;
 }
 
-.tab-menu button:hover {
+.tab-menu div:hover {
   color: white;
 }
 
-.tab-menu button:active {
+.tab-menu div:active {
   color: white;
   text-decoration: underline;
+  border-bottom: 4px solid white;
 }
 
 .tab-content {
