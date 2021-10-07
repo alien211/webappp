@@ -115,7 +115,7 @@ function orderByTitle() {
 
 function orderByBPM() {
     _tracks.sort((track1, track2) => {
-        return track1.BPM.localeCompare(track2.title);
+        return track1.BPM - track2.BPM;
     });
     appendTracks(_tracks);
 }

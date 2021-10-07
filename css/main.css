@@ -497,7 +497,6 @@
 .tab-menu div:active {
   color: white;
   text-decoration: underline;
-  border-bottom: 4px solid white;
 }
 
 .tab-content {
